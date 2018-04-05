@@ -19,7 +19,7 @@ d15c5cf  on Feb 14
 <html>
 	<head>
 
-		<title>TradingView Charting Library demo</title>
+		<title>coinEstate</title>
 
 		<!-- Fix for iOS Safari zooming bug -->
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
