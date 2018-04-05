@@ -7,7 +7,11 @@
 "use strict";
 
 /* global exports */
+Import ./tokenGuides
 
+
+
+def get_coinEstate_listings(filepath_or_url=COINESTATE_LISTINGS_URL):
 
 var symbols = COINESTATE_LISTINGS_URL = "https://raw.githubusercontent.com/somidax/coinEstate/master/config/main.json"
 def get_coinEstate_listings(filepath_or_url=COINESTATE_LISTINGS_URL):
