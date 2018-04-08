@@ -9,8 +9,13 @@
     <link href="/css/font-awesome.min.css" rel="stylesheet" />
     <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet" />
     <link href="/css/trades.css" rel="stylesheet" id="stylesheet" />
-    <title>ForkDelta</title>
-  </head>
+    <title>coinEstate</title>
+    <style type="text/css">
+<!--
+.style1 {font-size: 36px}
+-->
+    </style>
+</head>
 
   <body>
 
@@ -24,18 +29,15 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="/">
-            <img src="/images/title.png" />
-          </a>
-        </div>
+          <a href="/" class="navbar-brand style1"><strong>
+            coinEstate          </strong></a>        </div>
       </div><!-- /.container-fluid -->
     </nav>
 
     <div class="container-white">
       <div id="trades_nav"></div>
       <div id="trades_progress"></div>
-      <div id="trades_chart1"></div>
-      <div id="trades_chart2"></div>
+      <div id="trades_chart"></div>
       <div id="trades_list"></div>
     </div>
 
@@ -50,19 +52,15 @@
       $(() => {
         $(document).on('click', '#clickEarlier', (e) => {
           e.preventDefault();
-          Trades.clickEarlier();
+          bundle.TradeUtil.clickEarlier();
         });
         $(document).on('click', '#clickLater', (e) => {
           e.preventDefault();
-          Trades.clickLater();
+          bundle.TradeUtil.clickLater();
         });
         $(document).on('click', '#clickFilter', (e) => {
           e.preventDefault();
-          Trades.clickFilter();
-        });
-        $(document).on('click', '#clickRange', (e) => {
-          e.preventDefault();
-          Trades.clickRange();
+          bundle.TradeUtil.clickFilter();
         });
       });
     </script>
@@ -72,7 +70,7 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-75000235-4', 'auto');
+      ga('create', 'UA-99624091-1', 'auto');
       ga('send', 'pageview');
     </script>
   </body>
