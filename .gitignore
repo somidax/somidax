@@ -6,3 +6,6 @@ report*
 .project
 .pydevproject
 .vscode
+
+npm install jquery --save
+npm install --save-dev @types/jquery
