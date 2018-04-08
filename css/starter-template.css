@@ -1,0 +1,11 @@
+body {
+    padding-top: 50px;
+    background-color: #eef4ef;
+    background-image: url('image/coinestate.jpg');
+    background-repeat: repeat;
+}
+
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
