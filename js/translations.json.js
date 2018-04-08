@@ -1,6 +1,7 @@
 /* This module was module number 573 in the old packed code. It was referenced in the old code using `require(<module name>)` by the following module names:
 * ./translations.json
 */
+
 module.exports = {
     en: {
         en: 'English',
@@ -32,11 +33,11 @@ module.exports = {
         ko: '한국어',
     },
     title: {
-        en: 'ForkDelta',
-        cn: 'ForkDelta',
-        fr: 'ForkDelta',
-        es: 'ForkDelta',
-        ko: 'ForkDelta',
+        en: 'coinEstate',
+        cn: 'coinEstate',
+        fr: 'coinEstate',
+        es: 'coinEstate',
+        ko: 'coinEstate',
     },
     info: { en: 'Info', cn: '信息', fr: 'Info', es: 'Información', ko: '정보' },
     updates: {
@@ -161,12 +162,12 @@ module.exports = {
         ko: '깊이',
     },
     only_7_days: {
-        en: 'Note: ForkDelta will only show recent transactions.',
-        cn: '注意：ForkDelta只会显示最近的交易。',
+        en: 'Note: coinEstate will only show recent transactions.',
+        cn: '注意：coinEstate只会显示最近的交易。',
         fr:
-            'Remarque: ForkDelta affichera uniquement les transactions récentes.',
-        es: 'Nota: ForkDelta sólo mostrará transacciones recientes.',
-        ko: '참고: ForkDelta는 최근 거래내역만 표시합니다.',
+            'Remarque: coinEstate affichera uniquement les transactions récentes.',
+        es: 'Nota: coinEstate sólo mostrará transacciones recientes.',
+        ko: '참고: coinEstate는 최근 거래내역만 표시합니다.',
     },
     announcements: {
         en: 'Announcements',
@@ -411,11 +412,11 @@ module.exports = {
         ko: '지갑',
     },
     balance_etherdelta: {
-        en: 'ForkDelta',
-        cn: 'ForkDelta',
-        fr: 'ForkDelta',
-        es: 'ForkDelta',
-        ko: 'ForkDelta',
+        en: 'coinEstate',
+        cn: 'coinEstate',
+        fr: 'coinEstate',
+        es: 'coinEstate',
+        ko: 'coinEstate',
     },
     amount: {
         en: 'Amount',
@@ -637,15 +638,15 @@ module.exports = {
     },
     deposit_withdraw_2: {
         en:
-            'Under "Balances," you will see your balance for each of the two currencies you selected. This is the balance you have deposited to ForkDelta from your Ethereum account.',
+            'Under "Balances," you will see your balance for each of the two currencies you selected. This is the balance you have deposited to coinEstate from your Ethereum account.',
         cn:
             '在"余额"下面，你可以看到两种币的各自的余额，这是从你的以太坊账号充值的余额。',
         fr:
-            'Sous "Soldes" vous trouverez le solde pour chacune des deux devises selectionnées. C\'est le solde que vous venez de déposer sur ForkDelta depuis votre compte Ethereum',
+            'Sous "Soldes" vous trouverez le solde pour chacune des deux devises selectionnées. C\'est le solde que vous venez de déposer sur coinEstate depuis votre compte Ethereum',
         es:
             'En "Saldos" se encuentra el equilibrio para cada una de las dos monedas sélectionnées.',
         ko:
-            '"잔고" 아래에 선택한 두 통화 각각에 대한 잔고가 표시됩니다. 이는 당신의 이더리움 계정으로부터 ForkDelta로 입금된 잔고입니다.',
+            '"잔고" 아래에 선택한 두 통화 각각에 대한 잔고가 표시됩니다. 이는 당신의 이더리움 계정으로부터 coinEstate로 입금된 잔고입니다.',
     },
     deposit_withdraw_3: {
         en:
@@ -660,15 +661,15 @@ module.exports = {
     },
     deposit_withdraw_4: {
         en:
-            'To deposit, click the "Deposit" tab, pick a token, enter an amount you would like to deposit from your Ethereum account into ForkDelta, and click "Deposit.\\',
+            'To deposit, click the "Deposit" tab, pick a token, enter an amount you would like to deposit from your Ethereum account into coinEstate, and click "Deposit.\\',
         cn:
-            '充值点"充值"，选择一种币，输入从以太坊账号进入ForkDelta的充值数量，再点"充值"。',
+            '充值点"充值"，选择一种币，输入从以太坊账号进入coinEstate的充值数量，再点"充值"。',
         fr:
-            'Pour déposer, cliquer sur "Deposit" tab, choisir un jeton, entrer le montant à déposer depuis votre compte Ethereum vers ForkDelta, puis cliquer "Deposit".',
+            'Pour déposer, cliquer sur "Deposit" tab, choisir un jeton, entrer le montant à déposer depuis votre compte Ethereum vers coinEstate, puis cliquer "Deposit".',
         es:
-            'Para abonar haga clic en la pestaña "depósito" elegir un modo, ingrese la cantidad a depositar desde su cuenta a Etereum ForkDelta y haga clic en "depósito.\\',
+            'Para abonar haga clic en la pestaña "depósito" elegir un modo, ingrese la cantidad a depositar desde su cuenta a Etereum coinEstate y haga clic en "depósito.\\',
         ko:
-            '입금하시려면 "입금" 탭을 클릭하시고, 토큰을 선택하신 후 이더리움 계정에서 ForkDelta로 입금하시고자하는 금액을 입력하신 후 "입금"을 클릭해주세요.',
+            '입금하시려면 "입금" 탭을 클릭하시고, 토큰을 선택하신 후 이더리움 계정에서 coinEstate로 입금하시고자하는 금액을 입력하신 후 "입금"을 클릭해주세요.',
     },
     deposit_withdraw_5: {
         en: 'To withdraw, use the "Withdraw" tab.',
@@ -726,15 +727,15 @@ module.exports = {
     },
     trade_3: {
         en:
-            'ForkDelta supports resting orders (adding liquidity) and trading against existing resting orders (taking liquidity).',
+            'coinEstate supports resting orders (adding liquidity) and trading against existing resting orders (taking liquidity).',
         cn:
-            'ForkDelta支持"待定下单"（resting order）来增加流动性，以及交易"待定下单"来减少流动性。',
+            'coinEstate支持"待定下单"（resting order）来增加流动性，以及交易"待定下单"来减少流动性。',
         fr:
-            "ForkDelta supportes les ordres restant (l'ajout de liquidite) et marchander contre des ordres restant (prise de liquidite).",
+            "coinEstate supportes les ordres restant (l'ajout de liquidite) et marchander contre des ordres restant (prise de liquidite).",
         es:
-            'ForkDelta apoya descansando órdenes tales como la adición de liquidez y el comercio contre órdenes existentes como descansando Tomando liquidez..',
+            'coinEstate apoya descansando órdenes tales como la adición de liquidez y el comercio contre órdenes existentes como descansando Tomando liquidez..',
         ko:
-            'ForkDelta는 주문목록에 남아있는 주문(유동성 추가)과 존재하는 주문에 대응하는 거래(유동성 인수)를 지원합니다.',
+            'coinEstate는 주문목록에 남아있는 주문(유동성 추가)과 존재하는 주문에 대응하는 거래(유동성 인수)를 지원합니다.',
     },
     trade_4: {
         en:
@@ -762,15 +763,15 @@ module.exports = {
     },
     trade_6: {
         en:
-            'When you submit a resting order, it gets broadcast to the world. The current broadcast channel is a Gitter chat room, but ForkDelta also supports using Ethereum events as a fallback broadcast mechanism.',
+            'When you submit a resting order, it gets broadcast to the world. The current broadcast channel is a Gitter chat room, but coinEstate also supports using Ethereum events as a fallback broadcast mechanism.',
         cn:
-            '但你提交了一个"待定下单"后，它会广播到全球。现在的传播渠道是Gitter聊天室，但是ForkDelta也支持以太坊事件机制，用来保底。',
+            '但你提交了一个"待定下单"后，它会广播到全球。现在的传播渠道是Gitter聊天室，但是coinEstate也支持以太坊事件机制，用来保底。',
         fr:
-            "Quand vous soumettez un ordre restant, il se diffuse dans le monde entier. Le canal de causerie principal s'appele Gitter chat room, mais ForkDelta supporte egalement des evenements ethereum en tant que moyen de diffusion alternative.",
+            "Quand vous soumettez un ordre restant, il se diffuse dans le monde entier. Le canal de causerie principal s'appele Gitter chat room, mais coinEstate supporte egalement des evenements ethereum en tant que moyen de diffusion alternative.",
         es:
-            'Cuando se envía una orden de reposo que se transmitió al mundo. El canal de difusión actual es una sala de chat Gitter ForkDelta también promueve eventos Ethereum como un medio alternativo de distribución.',
+            'Cuando se envía una orden de reposo que se transmitió al mundo. El canal de difusión actual es una sala de chat Gitter coinEstate también promueve eventos Ethereum como un medio alternativo de distribución.',
         ko:
-            '주문을 남겨두기로 하시는 경우 현재 방송 채널인 Gitter 채팅룸에 알려지게 되며, ForkDelta는 또한 대체 방송 매커니즘으로 이더리움 이벤트를 사용하는 것을 지원합니다.',
+            '주문을 남겨두기로 하시는 경우 현재 방송 채널인 Gitter 채팅룸에 알려지게 되며, coinEstate는 또한 대체 방송 매커니즘으로 이더리움 이벤트를 사용하는 것을 지원합니다.',
     },
     trade_7: {
         en:
@@ -786,15 +787,15 @@ module.exports = {
     },
     trade_8: {
         en:
-            'A resting order represents a cryptographically signed intent to trade. Up until your order expires or is cancelled, anyone who has seen it can trade against it, assuming both traders have enough funds in their ForkDelta accounts. The GUI filters out orders that do not have funds to back them up. Partial fills are supported.',
+            'A resting order represents a cryptographically signed intent to trade. Up until your order expires or is cancelled, anyone who has seen it can trade against it, assuming both traders have enough funds in their coinEstate accounts. The GUI filters out orders that do not have funds to back them up. Partial fills are supported.',
         cn:
             '"待定下单"代表加密签名过的交易意向。在你的订单过期或取消以前，看见这个订单的任何人可以与它交易（前提是双方账号中有足够的币）。页面会过滤掉币的数量不够的订单。订单也可以部分成交。',
         fr:
-            "Un ordre restant represente une intention de commercer cryptographiquement signée. Jusqu'à ce que votre commande expire ou soit annulée, quiconque l'a vu peut échanger contre elle, en supposant que les deux commerçants disposent de suffisamment de fonds dans leurs comptes ForkDelta. Le remplissage partiel de l'ordre est egalement supporte.",
+            "Un ordre restant represente une intention de commercer cryptographiquement signée. Jusqu'à ce que votre commande expire ou soit annulée, quiconque l'a vu peut échanger contre elle, en supposant que les deux commerçants disposent de suffisamment de fonds dans leurs comptes coinEstate. Le remplissage partiel de l'ordre est egalement supporte.",
         es:
-            'Una orden restante representa intención de negociar firmado criptográficamente. Hasta que el pedido se cancela o expira cualquiera puede intercambiar sierra en contra de ella, suponiendo que ambos operadores tienen fondos suficientes en sus cuentas ForkDelta. También se admite el llenado parcial de la orden.',
+            'Una orden restante representa intención de negociar firmado criptográficamente. Hasta que el pedido se cancela o expira cualquiera puede intercambiar sierra en contra de ella, suponiendo que ambos operadores tienen fondos suficientes en sus cuentas coinEstate. También se admite el llenado parcial de la orden.',
         ko:
-            '주문목록에 남아있는 주문은 암호로 서명된 거래 의도를 나타냅니다. 주문이 만료되거나 취소될 때까지 양 거래자가 ForkDelta 계정에 충분한 자금을 보유하고 있다면 누구와도 거래할 수 있습니다. GUI는 충분한 자금이 뒷받침되지 않는 주문을 필터링합니다. 부분 거래가 지원됩니다.',
+            '주문목록에 남아있는 주문은 암호로 서명된 거래 의도를 나타냅니다. 주문이 만료되거나 취소될 때까지 양 거래자가 coinEstate 계정에 충분한 자금을 보유하고 있다면 누구와도 거래할 수 있습니다. GUI는 충분한 자금이 뒷받침되지 않는 주문을 필터링합니다. 부분 거래가 지원됩니다.',
     },
     trade_9: {
         en:
@@ -998,50 +999,50 @@ module.exports = {
     },
     balance_wallet_tooltip: {
         en:
-            'This is the balance in your personal Ethereum wallet, which you have connected to ForkDelta in the account dropdown (upper right).',
+            'This is the balance in your personal Ethereum wallet, which you have connected to coinEstate in the account dropdown (upper right).',
         cn:
-            '这是您的个人Ethereum钱包中的余额，您可以在帐户下拉列表（右上角）连接到ForkDelta。',
+            '这是您的个人Ethereum钱包中的余额，您可以在帐户下拉列表（右上角）连接到coinEstate。',
         fr:
-            "Il s'agit de l'équilibre de votre portefeuille personnel Ethereum, que vous avez connecté à ForkDelta dans le menu déroulant du compte (en haut à droite).",
+            "Il s'agit de l'équilibre de votre portefeuille personnel Ethereum, que vous avez connecté à coinEstate dans le menu déroulant du compte (en haut à droite).",
         es:
-            'Este es el saldo de su billetera Ethereum personal, que ha conectado a ForkDelta en la lista desplegable de la cuenta (superior derecha).',
+            'Este es el saldo de su billetera Ethereum personal, que ha conectado a coinEstate en la lista desplegable de la cuenta (superior derecha).',
         ko:
-            '계정 드롭다운(우측 상단)에 표시 중인 ForkDelta와 연결된 당신의 이더리움 개인지갑의 잔고입니다.',
+            '계정 드롭다운(우측 상단)에 표시 중인 coinEstate와 연결된 당신의 이더리움 개인지갑의 잔고입니다.',
     },
     balance_etherdelta_tooltip: {
         en:
             'This is the balance you have deposited from your personal Ethereum wallet to the current smart contract.',
-        cn: '这是您从您的个人Ethereum钱包存储到ForkDelta智能合同的余额。',
+        cn: '这是您从您的个人Ethereum钱包存储到coinEstate智能合同的余额。',
         fr:
-            "C'est le solde que vous avez déposé de votre portefeuille Ethereum personnel au contrat intelligent ForkDelta.",
+            "C'est le solde que vous avez déposé de votre portefeuille Ethereum personnel au contrat intelligent coinEstate.",
         es:
-            'Este es el saldo que ha depositado de su billetera Ethereum personal al contrato inteligente de ForkDelta.',
+            'Este es el saldo que ha depositado de su billetera Ethereum personal al contrato inteligente de coinEstate.',
         ko:
-            '당신의 이더리움 개인지갑에서 ForkDelta 스마트 컨트랙트로 입금한 잔고입니다.',
+            '당신의 이더리움 개인지갑에서 coinEstate 스마트 컨트랙트로 입금한 잔고입니다.',
     },
     deposit_tab: {
         en:
-            'Use this to deposit from your personal Ethereum wallet ("Wallet" column) to the current smart contract ("ForkDelta" column).',
+            'Use this to deposit from your personal Ethereum wallet ("Wallet" column) to the current smart contract ("coinEstate" column).',
         cn:
-            '使用它从您的个人Ethereum钱包（"钱包"栏）存入ForkDelta智能合同（"ForkDelta"栏）。',
+            '使用它从您的个人Ethereum钱包（"钱包"栏）存入coinEstate智能合同（"coinEstate"栏）。',
         fr:
-            'Utilisez ceci pour déposer auprès de votre portefeuille personnel Ethereum (colonne "Portefeuille") le contrat intelligent ForkDelta (colonne "ForkDelta").',
+            'Utilisez ceci pour déposer auprès de votre portefeuille personnel Ethereum (colonne "Portefeuille") le contrat intelligent coinEstate (colonne "coinEstate").',
         es:
-            'Utilícelo para depositar su billetera Ethereum personal (columna "Cartera") en el contrato inteligente ForkDelta (columna "ForkDelta").',
+            'Utilícelo para depositar su billetera Ethereum personal (columna "Cartera") en el contrato inteligente coinEstate (columna "coinEstate").',
         ko:
-            '당신의 개인 이더리움 지갑("지갑" 행)에서 ForkDelta 스마트컨트랙트 ("ForkDelta" 행)로 입금하실 때 사용하세요.',
+            '당신의 개인 이더리움 지갑("지갑" 행)에서 coinEstate 스마트컨트랙트 ("coinEstate" 행)로 입금하실 때 사용하세요.',
     },
     withdraw_tab: {
         en:
-            'Use this to withdraw from the current smart contract ("ForkDelta" column) to your personal Ethereum wallet ("Wallet" column).',
+            'Use this to withdraw from the current smart contract ("coinEstate" column) to your personal Ethereum wallet ("Wallet" column).',
         cn:
-            '使用它从ForkDelta智能合同（"ForkDelta"列）退回到您的个人Ethereum钱包（"钱包"列）。',
+            '使用它从coinEstate智能合同（"coinEstate"列）退回到您的个人Ethereum钱包（"钱包"列）。',
         fr:
-            'Utilisez cette option pour retirer le contrat intelligent ForkDelta (colonne "ForkDelta") à votre carte personnelle Ethereum wallet (colonne "Portefeuille").',
+            'Utilisez cette option pour retirer le contrat intelligent coinEstate (colonne "coinEstate") à votre carte personnelle Ethereum wallet (colonne "Portefeuille").',
         es:
-            'Utilice esto para retirar del contrato inteligente ForkDelta (columna "ForkDelta") a su billetera personal Ethereum (columna "Cartera").',
+            'Utilice esto para retirar del contrato inteligente coinEstate (columna "coinEstate") a su billetera personal Ethereum (columna "Cartera").',
         ko:
-            'ForkDelta 스마트 컨트랙트("ForkDelta" 열)에서 당신의 이더리움 개인지갑("Wallet" column)으로 출금하실 때 사용하세요.',
+            'coinEstate 스마트 컨트랙트("coinEstate" 열)에서 당신의 이더리움 개인지갑("Wallet" column)으로 출금하실 때 사용하세요.',
     },
     transfer_tab: {
         en:
