@@ -39,8 +39,18 @@
                             <a href="./about/index.html"><i class="fa fa-info-circle"></i> About coinEstate</a>
                         </li>
                         <li>
-                            <a href="mailto:coinestate@somidax.net?subject=Assistance Needed">Contact</a>
+                            <a href="mailto:coinestate@somidax.net?subject=Assistance Needed">i class="fa fa-info-circle">Contact</a>
                         </li>
+                        <li>
+                        <a href="https://marketplace.somidax.net/collections"><i class="fa fa-file-text"></i> shop onLine</a>
+                        </li>
+                        <li>
+                        <a href="https://github.com/somidax/baseHub/issues/new"><i class="fa fa-file-text"></i> Token Listing</a>
+                        </li>
+                        <li>
+                        <a href="https://tradewallet.somidax.net"><i class="fa fa-info-circle"></i> Trade BTC</a>
+                        </li>
+                        <li></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -52,16 +62,7 @@
                     <li class="dropdown" id="tokensDropdown"></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="https://marketplace.somidax.net/collections"><i class="fa fa-file-text"></i> shop onLine</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/somidax/baseHub/issues/new"><i class="fa fa-file-text"></i> Token Listing</a>
-                    </li>
-                    <li>
-                        <a href="https://tradewallet.somidax.net"><i class="fa fa-info-circle"></i> Trade BTC</a>
-                    </li>
-                    <li></li>
+                    
                     </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -243,6 +244,42 @@ widget.createButton()
 .on('click', function (e) { alert("coinEstate button pressed!"); })
 .append($('coinEstate button caption'));
 });
+      customFormatters: {
+  timeFormatter: {
+    format: function(date) { var _format_str = '%h:%m'; return _format_str.replace('%h', date.getUTCHours(), 2). replace('%m', date.getUTCMinutes(), 2). replace('%s', date.getUTCSeconds(), 2); }
+  },
+  dateFormatter: {
+    format: function(date) { return date.getUTCFullYear() + '/' + date.getUTCMonth() + '/' + date.getUTCDate(); }
+  }
+}
+      <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div id="tradingview_b8085"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/COINESTATE-SMDX/" rel="noopener" target="_blank"><span class="blue-text">SMDX</span> <span class="blue-text">chart</span> by TradingView</a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.widget(
+  {
+  "width": 980,
+  "height": 610,
+  "symbol": "COINESTATE:SMDX",
+  "interval": "D",
+  "timezone": "Etc/UTC",
+  "theme": "Light",
+  "style": "1",
+  "locale": "en",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": true,
+  "hotlist": true,
+  "calendar": true,
+  "news": [
+    "stocktwits",
+    "headlines"
+  ],
+  "container_id": "tradingview_b8085"
+}
 var widget = new TradingView.widget({
 "width": 980,
 "height": 610,,
