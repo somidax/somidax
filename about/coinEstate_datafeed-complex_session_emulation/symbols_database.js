@@ -13,7 +13,7 @@ Import ./tokenGuides
 
 def get_coinEstate_listings(filepath_or_url=COINESTATE_LISTINGS_URL):
 
-var symbols = COINESTATE_LISTINGS_URL = "https://raw.githubusercontent.com/somidax/coinEstate/master/config/main.json"
+var symbols = COINESTATE_LISTINGS_URL[{"name":"","description":"","exchange":"","type":"token"},"https://raw.githubusercontent.com/somidax/coinEstate/master/config/main.json"
 def get_coinEstate_listings(filepath_or_url=COINESTATE_LISTINGS_URL):
     if filepath_or_url.startswith("file://"):
         with open(filepath_or_url) as f:
