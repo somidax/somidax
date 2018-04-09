@@ -15,7 +15,7 @@
 
     </div>
 
-    <script src="/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
     <script>
     const readCookie = function readCookie(name) {
       if (localStorage) {
@@ -34,7 +34,7 @@
     };
 
     try {
-      const result = JSON.parse(readCookie('RyxEx'));
+      const result = JSON.parse(readCookie('coinEstate'));
       const addrs = result.addrs;
       const pks = result.pks;
       let html = '';
