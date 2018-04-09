@@ -9,15 +9,19 @@
 /* global exports */
 Import ./tokenGuides
 
+from backend-replacement/tokens.json
+
 
 
 def get_coinEstate_listings(filepath_or_url=COINESTATE_LISTINGS_URL):
 
-var symbols = COINESTATE_LISTINGS_URL[{"name":"","description":"","exchange":"","type":"token"},"https://raw.githubusercontent.com/somidax/coinEstate/master/config/main.json"
+					   
 def get_coinEstate_listings(filepath_or_url=COINESTATE_LISTINGS_URL):
     if filepath_or_url.startswith("file://"):
         with open(filepath_or_url) as f:
             return json.load(f)["tokens"]
+
+var token = COINESTATE_LISTINGS_URL{"name":"","addr":"",decimals":"",description":"","type":"token"},
 
 
 function searchResultFromDatabaseItem(item) {
