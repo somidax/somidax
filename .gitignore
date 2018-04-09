@@ -1,4 +1,5 @@
 .DS_Store
+node_modules
 .node*
 storage_*
 report*
@@ -6,8 +7,5 @@ report*
 .pydevproject
 .vscode
 
-# jetbrains IDE
-.idea
-
-# Node
-node_modules
+npm install jquery --save
+npm install --save-dev @types/jquery

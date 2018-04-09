@@ -1,0 +1,26 @@
+<div class="row-box height5 scroll">
+  <table class="table table-condensed table-borderless">
+    <% pairVolumes.forEach(function(pairVolume){ %>
+      <tr>
+        <td><a href="javascript:;" onclick="bundle.coinEstate.selectTokenAndBase('<%= pairVolume.token.addr %>','<%= pairVolume.base.addr %>');"><%= pairVolume.token.name+'/'+pairVolume.base.name %></a></td>
+        <td class="align-right"><%= pairVolume.bid ? pairVolume.bid.toNumber().toFixed(9) : '' %></td>
+        <td class="align-right padding-right"><%= pairVolume.ask ? pairVolume.ask.toNumber().toFixed(9) : '' %></td>
+        <td class="align-right"><%= Math.round(pairVolume.volume) %></td>
+      </tr>
+    <% }) %>
+    <tr class="mid-header">
+      <th class="trn">token</th>
+      <th class="align-right"></th>
+      <th class="align-right padding-right"></th>
+      <th class="trn align-right">daily</th>
+    </tr>
+    <% tokenVolumes.forEach(function(tokenVolume){ %>
+      <tr>
+        <td><a href="javascript:;" onclick="bundle.coinEstate.displayTokenGuide('<%= tokenVolume.token.name %>')"><%= tokenVolume.token.name %></a></td>
+        <td class="align-right"><%= Math.round(tokenVolume.volume) %></td>
+        <td class="align-right"></td>
+        <td class="align-right padding-right"></td>
+      </tr>
+    <% }) %>
+  </table>
+</div>
