@@ -742,10 +742,12 @@ source: 'https://www.tradingview.com/',
            }
          }
       </script>
-                    <script type="javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-                    <script><script type="javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);</script>
+                    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                    <script type="text/javascript">
+                    google.charts.load('current', {packages: ['corechart']});
+                    google.charts.setOnLoadCallback(drawChart);
+                    ...
+                    </script>>
                     <script src="/js/jquery.translate.js"></script>
                     <script src="/js/bootstrap.min.js"></script>
                     <script src="/js/alertify.min.js"></script>
