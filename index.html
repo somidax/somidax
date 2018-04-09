@@ -57,16 +57,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     </ul>
-                <ul class="nav navbar-nav navbar-right">
-                       <li class="dropdown" id="tokensDropdown"></li>
-                       </ul>
-                       <ul class="nav navbar-nav navbar-right">
-                       <li style="display: none;" class="dropdown" id="helpDropdown"></li>
-                      <li class="dropdown" id="tokenGuidesDropdown"></li>
-                      <li class="dropdown" id="connection"></li>
-                     <li class="dropdown" id="languages"></li>
-                     <li class="dropdown" id="accounts"></li>
-                           </ul>
+                      </ul>
                        <div class="container">
                      <!--/.nav-collapse -->
                </div>
@@ -228,7 +219,22 @@
                     <section class="features-list" style="text-transform: uppercase;">
     <div class="row">
 </div>
-    <p>.</p>
+    <p>  <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown" id="tokensDropdown"></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          	<li style="display: none;"><a href="/about/"><i class="fa fa-info-circle"></i> About BlueDEX</a></li>
+          	<li class="dropdown" id="helpDropdown"></li>
+            <li class="dropdown" id="tokenGuidesDropdown"></li>
+            <li class="dropdown" id="connection"></li>
+            <li class="dropdown" id="languages"></li>
+            <li class="dropdown" id="accounts"></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>.</p>
     </div>
   <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container">
@@ -682,7 +688,7 @@
                     <script src="/js/ejs_production.js"></script>
                     <script src="/js/chrome-u2f-api.js"></script>
                     <script src="/js/ledger.min.js"></script>
-                    <script src="/js/main-unminified.js"></script>
+                    <script src="/js/main.js"></script>
                     <script src="/about/public/charting_library.min.js"></script>
                     <script src="/about/public/datafeeds/udf/dist/polyfills.js"></script>
                     <script src="/about/public/datafeeds/udf/dist/bundle.js"></script>
