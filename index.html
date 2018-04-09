@@ -229,20 +229,6 @@
  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
   <script type="text/javascript">
  new TradingView.widget({
-drawings_access: {
-type: "black",
-tools: [
-{ name: "Regression Trend" },
-{ name: "coinEstate", grayed: true },
-]
-},
-studies_access: {
-type: "black",
-tools: [
-{ name: "Aroon" },
-{ name: "Balance of Power", grayed: true },
-]
-}
 widget.onChartReady(function() {
 widget.createButton()
 .attr('title', "coinEstate button tooltip")
@@ -257,7 +243,7 @@ interval: 'D',
 toolbar_bg: '#f4f7f9',
 allow_symbol_change: true,
 container_id: "tv_chart_container",
-datafeed: new Datafeeds.UDFCompatibleDatafeed = function(datafeedURL, updateFrequency)"),
+datafeed: new Datafeeds.UDFCompatibleDatafeed("https://demo_feed.tradingview.com"),
 library_path: "about/public/charting-library/",
 locale: "en",
 drawings_access: { type: 'black', tools: [ { name: "Regression Trend" } ] },
