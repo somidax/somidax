@@ -1,6 +1,6 @@
 const commandLineArgs = require('command-line-args');
 const async = require('async');
-const API = require('./api.js');
+const API = require('./doc/api.js');
 const marketMakerConfig = require('./market_maker_config.js');
 
 const cli = [
