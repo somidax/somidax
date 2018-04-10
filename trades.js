@@ -9,7 +9,7 @@ const sha3 = require('web3/lib/utils/sha3.js');
 const SolidityEvent = require('web3/lib/web3/event.js');
 const stats = require('stats-lite');
 
-const coinEstate = '0x983293eb01740d9788bbdcfe3a29d1bf2fdfc47d';
+const addresscoinEstate = '0x983293eb01740d9788bbdcfe3a29d1bf2fdfc47d';
 const addressToken = '0x7e8539d1e5cb91d63e46b8e188403b3f262a949b';
 
 const web3 = new Web3();
@@ -60,7 +60,7 @@ function TradeUtil() {
       if (err) throw new Error(err);
       const abi = JSON.parse(data.result);
       self.contractcoinEstate = web3.eth.contract(abi);
-      self.coinEstate = self.contractcoinEstate.at(addresscoinEstate);
+      self.contractcoinEstate = self.contractcoinEstate.at(addresscoinEstate);
       callback(null, self.contractcoinEstate);
     });
   };
