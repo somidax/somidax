@@ -16,7 +16,7 @@
         <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet" />
         <link href="/css/alertify.min.css" rel="stylesheet" />
         <link href="/css/alertify-bootstrap.min.css" rel="stylesheet" />
-        <link href="/css/decentrexstyle.css" rel="stylesheet" />
+        <link href="/css/coinEstatestyle.css" rel="stylesheet" />
         <link href="/css/small.css" rel="stylesheet" media="only screen and (max-device-width: 480px)" />
         <title>coinEstate |  An Ethereum token community marketplace exchange for everyone</title>
     </head>
@@ -27,32 +27,7 @@
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only" id="toggleNavigation" class="trn">toggle_navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown" id="tokensDropdown"></li>
-                        <li class="dropdown" id="basesDropdown"></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="dropdown" id="tokenGuidesDropdown"></li>
-                        <li class="dropdown" id="helpDropdown"></li>
-                        <li class="dropdown" id="connection"></li>
-                        <li class="dropdown" id="languages"></li>
-                        <li class="dropdown" id="addresses"></li>
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container-fluid -->
-        </nav>
-        <div class="container-fluid">
+              <div class="container-fluid">
             <!-- Address -->
             <div class="modal fade" id="accountModal" tabindex="-1" role="dialog">
                 <div class="modal-dialog modal-sm" role="document">
@@ -274,6 +249,36 @@
                         <div class="modal-body">
                             <div id="screencastBody"></div>
                         </div>
+			      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only" id="toggleNavigation" class="trn">toggle_navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="/images/title.png" alt="Engineered p2p Exchange" />
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown" id="tokensDropdown"></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://goo.gl/forms/i0PqhS7d8lYf8WQy1"><i class="fa fa-file-text"></i> Token Listing</a></li>
+            <li><a href="https://goo.gl/forms/jEQMaa4YU8ZDStD53"><i class="fa fa-file-text"></i> Advertise</a></li>
+            <li><a href="/about/"><i class="fa fa-info-circle"></i> About RYXEX</a></li>
+            <li style="display: none;" class="dropdown" id="helpDropdown"></li>
+            <li class="dropdown" id="tokenGuidesDropdown"></li>
+            <li class="dropdown" id="connection"></li>
+            <li class="dropdown" id="languages"></li>
+            <li class="dropdown" id="accounts"></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
                     </div>
                 </div>
             </div>
