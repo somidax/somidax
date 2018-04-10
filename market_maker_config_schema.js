@@ -1,7 +1,7 @@
 // http://jsonschema.net/#/
 
 const account = {
-  $schema: 'http://json-schema.org/draft-04/schema#',
+  $schema: 'http://json-schema.org/draft-06/schema#',
   type: 'object',
   displayProperty: 'account',
   properties: {
@@ -16,12 +16,12 @@ const account = {
       type: 'string',
     },
   },
-  additionalProperties: false,
+  additionalProperties: true,
   required: ['address'],
 };
 
 const pairs = {
-  $schema: 'http://json-schema.org/draft-04/schema#',
+  $schema: 'http://json-schema.org/draft-06/schema#',
   type: 'array',
   items: {
     type: 'object',
