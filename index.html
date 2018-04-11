@@ -813,7 +813,7 @@
     </style>
                                     <script>
     var chart = AmCharts.makeChart("chartdiv", {
-      "type": "stock",
+      "type": "Token",
       "color": "#fff",
       "dataSets": [{
       "title": "MSFT",
@@ -840,8 +840,8 @@
          * data loader for data set data
          */
         "dataLoader": {
-          "url": "./js/www.amcharts.com/lib/coinEstate chart/data/TXN.csv",
-          "format": "html",
+          "url": "./about/coinEstate_datafeed-complex_session_emulation/symbols_database.js",
+          "format": "js",
           "showCurtain": true,
           "showErrors": true,
           "async": true,
@@ -907,8 +907,8 @@
         "compared": true,
         "categoryField": "Date",
         "dataLoader": {
-          "url": "./js/www.amcharts.com/lib/coinEstate chart/data/TXN.csv",
-          "format": "csv",
+          "url": "./about/coinEstate_datafeed-complex_session_emulation/symbols_database.js",
+          "format": "js",
           "showCurtain": true,
           "showErrors": true,
           "async": true,
