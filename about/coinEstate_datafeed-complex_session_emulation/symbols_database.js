@@ -7,21 +7,10 @@
 "use strict";
 
 /* global exports */
-Import ./tokenGuides
 
-from backend-replacement/tokens.json
+var symbols = [{"name":"SMDX","description":"SOMIDAX.","exchange":"CcoinEstate","type":"Token"},
+{"name":"0ED","description":"Ethereum Diamond","exchange":"NYSE","coinEstate":"Token"},
 
-
-
-def get_coinEstate_listings(filepath_or_url=COINESTATE_LISTINGS_URL):
-
-					   
-def get_coinEstate_listings(filepath_or_url=COINESTATE_LISTINGS_URL):
-    if filepath_or_url.startswith("file://"):
-        with open(filepath_or_url) as f:
-            return json.load(f)["tokens"]
-
-var token = COINESTATE_LISTINGS_URL{"name":"","addr":"",decimals":"",description":"","type":"token"},
 
 
 function searchResultFromDatabaseItem(item) {
