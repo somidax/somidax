@@ -2,6 +2,7 @@
 .idea
 /index.ngfactory.ts
 /index.ngsummary.json
+
 # Logs
 logs
 *.log
