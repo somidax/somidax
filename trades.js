@@ -1,5 +1,5 @@
 /* eslint-env browser */
-/* global $, EJS, google */
+/* global $, EJS,amcharts3, google */
 
 const Web3 = require('web3');
 const BigNumber = require('bignumber.js');
