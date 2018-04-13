@@ -1,6 +1,6 @@
-# RYXEX bot sample code
+# coinEstate bot sample code
 
-For API documentation, see https://github.com/ryxex/ryxex.github.io/tree/master/docs.
+For API documentation, see https://github.com/somidax/backend-replacement/tree/master/docs.
 
 Each language has its own subfolder. In general, each subfolder has two example bots:
 
