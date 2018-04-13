@@ -553,7 +553,7 @@
                                         </div>
                                     </body>
                                 </html></p>
-                            <p>. 
+                            <p>.          
                             <ul class="pager"> 
                                 <li>
 </li>
@@ -621,11 +621,12 @@
     }
     </style>
                                         <script>
+});
     var chart = AmCharts.makeChart("chartdiv", {
-      "type": "stock",
+      "type": "Cryptocurency",
       "color": "#fff",
       "dataSets": [{
-      "title": "MSFT",
+      "title": "Token",
         "fieldMappings": [{
           "fromField": "Open",
           "toField": "open"
@@ -642,7 +643,7 @@
           "fromField": "Volume",
           "toField": "volume"
         }],
-        "compared": false,
+        "compared": True,
         "categoryField": "Date",
 
         /**
@@ -732,7 +733,7 @@
       "dataDateFormat": "YYYY-MM-DD",
 
       "panels": [{
-          "title": "Value",
+          "title": "Price",
           "percentHeight": 70,
 
           "stockGraphs": [{
@@ -913,17 +914,56 @@
       // update value
       progressbar.progressbar( "value", totalPercent );
     }
-
+var chart = AmCharts.makeChart("chartdiv",{
+  "type": "serial",
+  "categoryField": "category",
+  "categoryAxis": {
+    "gridPosition": "start"
+     var chart = AmCharts.makeChart("chartdiv", {
+  ...
+  "balloon": {
+    "adjustBorderColor": true,
+    "color": "#000000",
+    "cornerRadius": 5,
+    "fillColor": "#FFFFFF"
+  }
+});
+  },
+  "graphs": [
+    {
+      "title": "coinEstate",
+      "valueField": "Token"
+    }
+  ],
+  "valueAxes": [
+    {
+      "title": "Price"
+    }
+  ],
+  "legend": {
+    "useGraphSettings": true
+  },
+  "titles": [
+    {
+      "size": 15,
+      "text": "Token Pulse"
+    }
+  ],
+  "dataProvider": [
+    {
+      "category": "Price",
+      "column-1": 8
+    },
+    {
+      "category": "Volume",
+      "column-1": 10
+    },
+  ]
+});
     </script>
                                     </head>
                                     <body>
-                                        <div id="chartcontainer">
-                                            <div id="chartdiv"></div>
-                                            <div id="progressbar" style="display: none;">
-                                                <div class="progress-label">...</div>
-                                            </div>
-                                        </div>
-                                    </body>
+</body>
                                 </html>
                                 <li>
                         </div>
