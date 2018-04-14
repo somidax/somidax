@@ -551,7 +551,7 @@
                                 <p><!-- Styles -->
 <style>
 #chartdiv {
-  width: 100%;
+  width: 70%;
   height: 500px;
 }
 </style>
@@ -570,7 +570,7 @@ var chartData = generateChartData();
 
 function generateChartData() {
   var chartData = [];
-  var firstDate = new Date( 2018, 1, 1 );
+  var firstDate = new Date( 2018, 02, 1 );
   firstDate.setDate( firstDate.getDate() - 1000 );
   firstDate.setHours( 0, 0, 0, 0 );
 
@@ -602,8 +602,8 @@ var chart = AmCharts.makeChart( "chartdiv", {
   "dataSets": [ {
     "color": "#b0de09",
     "fieldMappings": [ {
-      "fromField": "Value",
-      "toField": "Value"
+      "fromField": "value",
+      "toField": "value"
     }, {
       "fromField": "volume",
       "toField": "volume"
@@ -620,7 +620,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
 
     "stockGraphs": [ {
       "id": "g1",
-      "valueField": "Vlues",
+      "valueField": "value",
       "type": "smoothedLine",
       "lineThickness": 2,
       "bullet": "round"
@@ -696,7 +696,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
 </script>
 
 <!-- HTML -->
-<div id="chartdiv"></div>			<p>.</p>
+<div id="chartdiv"></div>				<p>.</p>
 </p>
                                 <div class="col-md-4 col-sm-6">
                                     <h4><i class="fa fa-money" aria-hidden="true"></i><br><blockquote>
