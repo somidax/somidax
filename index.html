@@ -100,7 +100,7 @@
             <!-- /.container-fluid -->
         </nav>
         <p> <p><!-- Styles --><style>#chartdiv {
-    width: 97%;
+    width: 100%;
     height: 500px;
 }</style><!-- Resources --><script src="./js/www.amcharts.com/lib/3/amcharts.js"></script><script src="./js/www.amcharts.com/lib/3/serial.js"></script><script src="./js/www.amcharts.com/lib/3/amstock.js"></script><script src="./js/www.amcharts.com/lib/3/dataloader.min.js"></script><script src="./js/www.amcharts.com/lib/3/plugins/export/export.min.js"></script><link rel="stylesheet" href="./js/www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" /><script src="./js/www.amcharts.com/lib/3/themes/light.js"></script><!-- Chart code --><script>
 var chart = AmCharts.makeChart( "chartdiv", {
@@ -133,8 +133,8 @@ var chart = AmCharts.makeChart( "chartdiv", {
      * data loader for data set data
      */
     "dataLoader": {
-      "url": "https://raw.githubusercontent.com/forkdelta/backend-replacement/order-fill-backfill/server/websocket_server.py",
-      "format": "py",
+      "url": "https://raw.githubusercontent.com/forkdelta/forkdelta.github.io/master/config/main.json",
+      "format": "json",
       "showCurtain": true,
       "showErrors": true,
       "async": true,
@@ -147,7 +147,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
      * data loader for events data
      */
     "eventDataLoader": {
-      "url": "https://github.com/somidax/backend-replacement/blob/master/docs/api/api.js",
+      "url": "https://github.com/somidax/coinEstate/blob/master/js/bundle.js",
       "format": "js",
       "showCurtain": true,
       "showErrors": true,
@@ -200,8 +200,8 @@ var chart = AmCharts.makeChart( "chartdiv", {
     "compared": true,
     "categoryField": "Date",
     "dataLoader": {
-      "url": "https://raw.githubusercontent.com/forkdelta/backend-replacement/order-fill-backfill/server/websocket_server.py",
-      "format": "py",
+      "url": "https://www.amcharts.com/wp-content/uploads/assets/stock/TXN.csv",
+      "format": "csv",
       "showCurtain": true,
       "showErrors": true,
       "async": true,
@@ -213,7 +213,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
   "dataDateFormat": "YYYY-MM-DD",
 
   "panels": [ {
-      "title": "Price",
+      "title": "Value",
       "percentHeight": 70,
 
       "stockGraphs": [ {
@@ -341,8 +341,8 @@ var chart = AmCharts.makeChart( "chartdiv", {
         "label": "1D"
       }, {
         "period": "MM",
-        "count": 10,
-        "label": "10D"
+        "count": 1,
+        "label": "1W"
       }, {
         "period": "MM",
         "count": 1,
@@ -872,8 +872,6 @@ var chart = AmCharts.makeChart( "chartdiv", {
                         <p>&nbsp;<a href="https://marketplace.somidax.net//" target="_blank">MARKETPLACE</a> | <a href="https://tradewallet.somidax.net/" target="_blank">TRADEWALLET</a> | <a href="https://media-app.somidax.net/" target="_blank">MEDIA-APP</a> | <a href="https://www.somidax.net//" target="_blank">SOMIDAX FOUNDATION</a></p>
                     </div>
                     <section class="content-block-nopad bg-deepocean footer-wrap-1-2" wp-cz-section="blocks_footer_1_2" wp-cz-section-title="Footer 1-2">
-                        <!-- /.container -->
-                    </section>
-                 </div>                     
+                           </div>                     
             </body>             
         </html>
