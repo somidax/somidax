@@ -109,7 +109,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
 
   //"color": "#fff",
   "dataSets": [ {
-    "title": "MSFT",
+    "title": "Price",
     "fieldMappings": [ {
       "fromField": "Open",
       "toField": "open"
@@ -180,7 +180,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
     }
 
   }, {
-    "title": "TXN",
+    "title": "Volume",
     "fieldMappings": [ {
       "fromField": "Open",
       "toField": "open"
@@ -213,7 +213,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
   "dataDateFormat": "YYYY-MM-DD",
 
   "panels": [ {
-      "title": "Value",
+      "title": "Price",
       "percentHeight": 70,
 
       "stockGraphs": [ {
@@ -368,26 +368,9 @@ var chart = AmCharts.makeChart( "chartdiv", {
     ]
   }
 } );
-</script><!-- HTML --><div id="chartdiv"></div>  <p>.</p>  </div> </section> 
+</script><!-- HTML --><div id="chartdiv"></div> <p>.</p> </div> </section> 
         <div class="col-md-7">
             <div class="row-container">
-                <div class="row-header trn">price_chart</div>
-                <div class="row-box nav-header">
-                    <ul class="nav nav-tabs two columns" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#chartPrice" aria-controls="chartPrice" role="tab" data-toggle="tab" class="trn">price</a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#chartDepth" aria-controls="chartDepth" role="tab" data-toggle="tab" class="trn">depth</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="row-box height2">
-                    <div class="tab-content" style="height: 100%;">
-                        <div role="tabpanel" class="tab-pane active" id="chartPrice" style="height: 100%; width: 100%; background: #00796b;"></div>
-                        <div role="tabpanel" class="tab-pane" id="chartDepth" style="height: 100%; width: 100%; background: #00796b;"></div>
-                    </div>
-                </div>
                 <div class="row-header trn">new_order</div>
                 <div class="row-box nav-header">
                     <ul class="nav nav-tabs two columns" role="tablist">
@@ -415,11 +398,10 @@ var chart = AmCharts.makeChart( "chartdiv", {
                 <div id="trades"></div>
             </div>
         </div>         
-
         <div class="col-md-5">
             <div class="row-container">
                 <div class="row-container">
-                    <div class="row-header trn">volume</div>
+                    <div class="row-header trn">Token Hub</div>
                     <input id="myInput" onkeyup="myFunction()" placeholder="Ethereum tokens search ..." title="Type in a Token name" type="text">
                     <div class="row-box table-header">
                         <table class="table table-condensed table-borderless">
@@ -707,7 +689,6 @@ var chart = AmCharts.makeChart( "chartdiv", {
             </div>
             <!--   FOOTER START================== -->
         </div>         
-
         <p class="col-md-4 col-sm-6">
                             Ethereum smart contract is a heart of coinEstate, it is stored in blockchain.</p> 
         <p>.<div id="carousel2" class="carousel slide" data-ride="carousel"> 
@@ -893,6 +874,6 @@ var chart = AmCharts.makeChart( "chartdiv", {
                     <section class="content-block-nopad bg-deepocean footer-wrap-1-2" wp-cz-section="blocks_footer_1_2" wp-cz-section-title="Footer 1-2">
                         <!-- /.container -->
                     </section>
-                  </div>                     
+                 </div>                     
             </body>             
         </html>
