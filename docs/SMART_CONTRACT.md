@@ -10,7 +10,7 @@
 
 - The smart contract has been upgraded to `pragma solidity ^0.4.2`.
 - The only `payable` function is `deposit`.
-- The smart contract has improved on-chain order functionality. Previously, the on-chain order function would have required an off-chain signature as input. This is no longer necessary. Order hashes that have been submitted on-chain are now stored in a separate mapping, and the order details are stored in the event log. This is meant to be a fallback in the event that the off-chain order system is no longer feasible.
+- The smart contract has improved on-chain order functionality. Previously, the on-chain order function would have required an off-chain signature as input. This is no longer necessary. Order hashes that have been submitted on-chain are now stored in a separate mapping, and the order details are stored/maped in the event log. This is meant to be a fallback in the event that the off-chain order system is no longer feasible.
 - Because the smart contract is now an order parameter, orders are only valid on one smart contract. Previously, they were valid on multiple smart contracts at a time.
 - An admin account has the ability to change the fee account, the admin account, or the fees.
 - The fees are currently the same as before (0.3% for takers, 0.0% for makers), and the admin account is only allowed to decrease the fees.
