@@ -134,14 +134,26 @@
 <!-- Resources --><script src="./js/www.amcharts.com/lib/3/amcharts.js">
 			    </script><script src="./js/www.amcharts.com/lib/3/serial.js"></script>
 			    <script src="./js/www.amcharts.com/lib/3/amstock.js"></script>
-			    
+			    <script src="./js/www.amcharts.com/lib/3/dataloader.min.js"></script>
 				</script><script src="./js/www.amcharts.com/lib/3/plugins/export/export.min.js">
 			    </script><link rel="stylesheet" href="./js/www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
 			    <script src="./js/www.amcharts.com/lib/3/themes/light.js">
 			    </script><!-- Chart code --><script>
 			    
 
-
+AmCharts.makeChart( "chartdiv", {
+  ...,
+  "dataSets": [{
+    ...,
+    "dataLoader": {
+      "url": "https://raw.githubusercontent.com/RYXEX/RYXEX.github.io/master/config/main.json",
+      "format": "json",
+      "delimiter": ",",       // column separator
+      "useColumnNames": true, // use first row for column names
+      "skip": 1               // skip header row
+    }
+  }]
+} );
 var chartData = generateChartData();
 
 function generateChartData() {
