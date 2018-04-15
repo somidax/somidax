@@ -9,7 +9,7 @@
 /* global exports */
 
 var symbols = [{"name":"SMDX","description":"SOMIDAX.","exchange":"CcoinEstate","type":"Token"},
-{"name":"0ED","description":"Ethereum Diamond","exchange":"NYSE","coinEstate":"Token"},
+{"name":"0ED","description":"Ethereum Diamond","exchange":"coinEstate":"Token"},
 
 
 
