@@ -122,19 +122,23 @@
                     <p>  
                     <p>  
                     <p>  
-                    <p><!-- Styles --><style>#chartdiv {
-    width: 97%;
-    height: 500px;
-}</style><!-- Resources --><script src="./js/www.amcharts.com/lib/3/amcharts.js">
-			    </script><script src="./js/www.amcharts.com/lib/3/serial.js">
-			    </script><script src="./js/www.amcharts.com/lib/3/amstock.js">
-			    </script><script src="./js/www.amcharts.com/lib/3/plugins/export/export.min.js">
-			    </script><link rel="stylesheet" href="./js/www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" /><script src="./js/www.amcharts.com/lib/3/themes/light.js"></script><!-- Chart code --><script>
+                    <p></style>
+
+<!-- Resources -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/amstock.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+
+<!-- Chart code -->
+<script>
 var chartData = generateChartData();
 
 function generateChartData() {
   var chartData = [];
-  var firstDate = new Date( 2018,1,1 );
+  var firstDate = new Date( 2012, 0, 1 );
   firstDate.setDate( firstDate.getDate() - 1000 );
   firstDate.setHours( 0, 0, 0, 0 );
 
@@ -149,7 +153,7 @@ function generateChartData() {
 
     chartData.push( {
       "date": newDate,
-      "Price,
+      "value": a,
       "volume": b
     } );
   }
@@ -166,8 +170,8 @@ var chart = AmCharts.makeChart( "chartdiv", {
   "dataSets": [ {
     "color": "#b0de09",
     "fieldMappings": [ {
-      "fromField": "Price
-      "toField": "Price
+      "fromField": "value",
+      "toField": "value"
     }, {
       "fromField": "volume",
       "toField": "volume"
@@ -257,7 +261,10 @@ var chart = AmCharts.makeChart( "chartdiv", {
     "position": "bottom-right"
   }
 } );
-</script><!-- HTML --><div id="chartdiv"></div> <p>.</p>  
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>	 <p>.</p>  
                 </div>                 
             </section>             
             <div class="col-md-7">
