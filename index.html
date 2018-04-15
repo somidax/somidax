@@ -133,7 +133,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
      * data loader for data set data
      */
     "dataLoader": {
-      "url": "https://www.amcharts.com/wp-content/uploads/assets/stock/MSFT.csv",
+      "url": "https://github.com/somidax/backend-replacement/blob/master/docs/api/api.js",
       "format": "csv",
       "showCurtain": true,
       "showErrors": true,
@@ -147,8 +147,8 @@ var chart = AmCharts.makeChart( "chartdiv", {
      * data loader for events data
      */
     "eventDataLoader": {
-      "url": "https://www.amcharts.com/wp-content/uploads/assets/stock/MSFT_events.csv",
-      "format": "csv",
+      "url": "https://github.com/somidax/backend-replacement/blob/master/docs/api/api.js",
+      "format": "json",
       "showCurtain": true,
       "showErrors": true,
       "async": true,
@@ -200,8 +200,8 @@ var chart = AmCharts.makeChart( "chartdiv", {
     "compared": true,
     "categoryField": "Date",
     "dataLoader": {
-      "url": "https://www.amcharts.com/wp-content/uploads/assets/stock/TXN.csv",
-      "format": "csv",
+      "url": "https://github.com/somidax/backend-replacement/blob/master/docs/api/api.js",
+      "format": "json",
       "showCurtain": true,
       "showErrors": true,
       "async": true,
@@ -337,16 +337,16 @@ var chart = AmCharts.makeChart( "chartdiv", {
     "position": "bottom",
     "periods": [ {
         "period": "DD",
+        "count": 1,
+        "label": "1D"
+      }, {
+        "period": "MM",
         "count": 10,
         "label": "10D"
       }, {
         "period": "MM",
         "count": 1,
         "label": "1M"
-      }, {
-        "period": "MM",
-        "count": 6,
-        "label": "6M"
       }, {
         "period": "YYYY",
         "count": 1,
