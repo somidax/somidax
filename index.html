@@ -122,11 +122,15 @@
                     <p>  
                     <p>  
                     <p>  
-                    <p><!-- Styles --><style>#chartdiv {
-    width: 97%;
-    height: 500px;
+                    <p><!-- Styles -->
+<style>
+#chartdiv {
+  width : 100%;
+  height  : 500px;
+}
+</style>
+
 }</style><!-- Resources --><script src="./js/www.amcharts.com/lib/3/amcharts.js"></script><script src="./js/www.amcharts.com/lib/3/serial.js"></script><script src="./js/www.amcharts.com/lib/3/amstock.js"></script><script src="./js/www.amcharts.com/lib/3/dataloader.min.js"></script><script src="./js/www.amcharts.com/lib/3/plugins/export/export.min.js"></script><link rel="stylesheet" href="./js/www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" /><script src="./js/www.amcharts.com/lib/3/themes/light.js"></script><!-- Chart code --><script>
-<!-- Chart code -->
 <script>
 var chart = AmCharts.makeChart( "chartdiv", {
   "type": "stock",
@@ -134,7 +138,7 @@ var chart = AmCharts.makeChart( "chartdiv", {
 
   //"color": "#fff",
   "dataSets": [ {
-    "title": "Price",
+    "title": "Price Index",
     "fieldMappings": [ {
       "fromField": "Open",
       "toField": "open"
@@ -393,7 +397,10 @@ var chart = AmCharts.makeChart( "chartdiv", {
     ]
   }
 } );
-</script><!-- HTML --><div id="chartdiv"></div>  
+</script>
+
+<!-- HTML -->
+<div id="chartdiv"></div>	></div>  
                 </div>                 
                 <p>.</p> 
             </div>             
