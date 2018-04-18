@@ -78,7 +78,7 @@ const pairs = {
         type: 'string',
       },
     },
-    additionalProperties: false,
+    additionalProperties: true,
     required: [
       'pair',
       'expires',
