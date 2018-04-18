@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /js/
-Disallow: /css/
-Disallow: /templates/
-Disallow: /help/
-Sitemap: https://coinestate.somidax.net/sitemap.xml

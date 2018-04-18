@@ -5,7 +5,7 @@ $(() => {
   $('body').on('click', '#accountSubmit', (e) => {
     e.preventDefault();
     $('#accountModal').modal('hide');
-    bundle.DecentrEx.addAccount($('#accountAddr').val(), $('#accountPk').val());
+    bundle.coinEstate.addAccount($('#accountAddr').val(), $('#accountPk').val());
   });
 });
 function buyChange() { // eslint-disable-line no-unused-vars
@@ -23,7 +23,7 @@ function sellChange() { // eslint-disable-line no-unused-vars
 $(() => {
   $('body').on('click', '#buySubmit', (e) => {
     e.preventDefault();
-    bundle.DecentrEx.order(
+    bundle.coinEstate.order(
       'buy',
       $('#buyAmount').val(),
       $('#buyPrice').val(),
@@ -34,7 +34,7 @@ $(() => {
 $(() => {
   $('body').on('click', '#sellSubmit', (e) => {
     e.preventDefault();
-    bundle.DecentrEx.order(
+    bundle.coinEstate.order(
       'sell',
       $('#sellAmount').val(),
       $('#sellPrice').val(),
@@ -92,14 +92,14 @@ $(() => {
   $('body').on('click', '#buyCrossSubmit', (e) => {
     e.preventDefault();
     $('#buyCrossModal').modal('hide');
-    bundle.DecentrEx.trade('buy', JSON.parse($('#buyCrossOrder').val()), $('#buyCrossAmount').val());
+    bundle.coinEstate.trade('buy', JSON.parse($('#buyCrossOrder').val()), $('#buyCrossAmount').val());
   });
 });
 $(() => {
   $('body').on('click', '#sellCrossSubmit', (e) => {
     e.preventDefault();
     $('#sellCrossModal').modal('hide');
-    bundle.DecentrEx.trade(
+    bundle.coinEstate.trade(
       'sell',
       JSON.parse($('#sellCrossOrder').val()),
       $('#sellCrossAmount').val());
@@ -109,7 +109,7 @@ $(() => {
   $('body').on('click', '#otherTokenSubmit', (e) => {
     e.preventDefault();
     $('#otherTokenModal').modal('hide');
-    bundle.DecentrEx.selectToken(
+    bundle.coinEstate.selectToken(
       $('#otherTokenAddr').val(),
       $('#otherTokenName').val(),
       $('#otherTokenDecimals').val());
@@ -119,19 +119,19 @@ $(() => {
   $('body').on('click', '#otherBaseSubmit', (e) => {
     e.preventDefault();
     $('#otherBaseModal').modal('hide');
-    bundle.DecentrEx.selectBase(
+    bundle.coinEstate.selectBase(
       $('#otherBaseAddr').val(),
       $('#otherBaseName').val(),
       $('#otherBaseDecimals').val());
   });
 });
 function depositClick(addr) { // eslint-disable-line no-unused-vars
-  bundle.DecentrEx.deposit(addr, $(`#depositAmount${addr}`).val());
+  bundle.coinEstate.deposit(addr, $(`#depositAmount${addr}`).val());
 }
 function withdrawClick(addr) { // eslint-disable-line no-unused-vars
-  bundle.DecentrEx.withdraw(addr, $(`#withdrawAmount${addr}`).val());
+  bundle.coinEstate.withdraw(addr, $(`#withdrawAmount${addr}`).val());
 }
 function transferClick(addr) { // eslint-disable-line no-unused-vars
-  bundle.DecentrEx.transfer(addr, $(`#transferAmount${addr}`).val(), $(`#transferTo${addr}`).val());
+  bundle.coinEstate.transfer(addr, $(`#transferAmount${addr}`).val(), $(`#transferTo${addr}`).val());
 }
 $(() => {});

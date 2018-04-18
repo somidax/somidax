@@ -1,0 +1,38 @@
+{
+  "name": "amcharts3",
+  "version": "3.21.12",
+  "description": "JavaScript Charts V3",
+  "main": "amcharts/amcharts.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amcharts/amcharts3.git"
+  },
+  "keywords": [
+    "amcharts",
+    "javascript",
+    "charts"
+  ],
+  "author": "amCharts <contact@amcharts.com>",
+  "license": "Custom",
+  "bugs": {
+    "url": "https://github.com/amcharts/amcharts3/issues"
+  },
+  "homepage": "https://www.amcharts.com/"
+}
+{
+  "name": "create-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "@amcharts/amcharts3-react": "^3.0.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-scripts": "1.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

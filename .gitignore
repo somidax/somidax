@@ -9,3 +9,5 @@ report*
 
 npm install jquery --save
 npm install --save-dev @types/jquery
+npm install -g snyk
+snyk auth 
