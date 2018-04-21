@@ -94,7 +94,10 @@
                                     </button>
                                 </div>
                                 <div id="navbar" class="collapse navbar-collapse">
-                                    <ul class="nav navbar-nav">
+                                    <ul class="nav navbar-nav"><a href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/black.css')"><i class="fa fa-square" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/white.css')"><i class="fa fa-square-o" aria-hidden="true"></i></a>
                                         <li class="active">
                                             <a href="/images/logo.png" rel="icon">coinEstate</a>
                                         </li>
@@ -389,235 +392,238 @@ var chart = AmCharts.makeChart("chartdiv", {
                                         <!-- Address -->                                         
                                         <div class="modal fade" id="accountModal" tabindex="-1" role="dialog">
                                             <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <h4 class="modal-title trn">import_account</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <div class="form-group">
-                                                                <label for="accountAddr" class="trn">address</label>
-                                                                <input type="text" class="form-control" id="accountAddr" placeholder="0x..." />
-                                                            </div>
-                                                            <div id="pkDiv">
-                                                                <div class="form-group">
-                                                                    <label for="accountPk" class="trn">private_key</label>
-                                                                    <input type="text" class="form-control" id="accountPk" placeholder="0x..." />
-                                                                </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default trn" data-dismiss="modal">cancel</button>
-                                                        <button type="button" class="btn btn-primary trn" id="accountSubmit">import_account</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>                                         
-                                        <!-- Buy -->                                         
-                                        <div class="modal fade" id="buyCrossModal" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <h4 class="modal-title trn">buy</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <div class="form-group">
-                                                                <label for="buyCrossDesc" class="trn">order</label>
-                                                                <div id="buyCrossDesc"></div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="buyCrossAmount">
-                                                                    <span class="trn">amount_to_buy</span> (
-                                                                    <span class="buyCrossToken"></span>)
-                                                                </label>
-                                                                <input type="text" class="form-control trn" id="buyCrossAmount" placeholder="amount" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="buyCrossBaseAmount">
-                                                                    <span class="buyCrossBase"></span>
-                                                                </label>
-                                                                <input type="text" class="form-control trn" id="buyCrossBaseAmount" placeholder="amount" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="buyCrossFee">
-                                                                    <span class="trn">fee</span> (
-                                                                    <span class="buyCrossBase"></span>)
-                                                                </label>
-                                                                <input type="text" class="form-control trn" id="buyCrossFee" disabled="disabled" />
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <input type="hidden" id="buyCrossOrder" />
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary trn" id="buyCrossSubmit">buy</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>                                         
-                                        <!-- Sell -->                                         
-                                        <div class="modal fade" id="sellCrossModal" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <h4 class="modal-title trn">sell</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <div class="form-group">
-                                                                <label for="sellCrossDesc" class="trn">order</label>
-                                                                <div id="sellCrossDesc"></div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="sellCrossAmount">
-                                                                    <span class="trn">amount_to_sell</span> (
-                                                                    <span class="sellCrossToken"></span>)
-                                                                </label>
-                                                                <input type="text" class="form-control trn" id="sellCrossAmount" placeholder="amount" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="sellCrossBaseAmount">
-                                                                    <span class="sellCrossBase"></span>
-                                                                </label>
-                                                                <input type="text" class="form-control trn" id="sellCrossBaseAmount" placeholder="amount" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="sellCrossFee">
-                                                                    <span class="trn">fee</span> (
-                                                                    <span class="sellCrossToken"></span>)
-                                                                </label>
-                                                                <input type="text" class="form-control trn" id="sellCrossFee" disabled="disabled" />
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <input type="hidden" id="sellCrossOrder" />
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-primary trn" id="sellCrossSubmit">sell</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>                                         
-                                        <!-- Other token -->                                         
-                                        <div class="modal fade" id="otherTokenModal" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <h4 class="modal-title trn">other_token</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <div class="form-group">
-                                                                <label for="otherTokenAddr" class="trn">address</label>
-                                                                <input type="text" class="form-control" id="otherTokenAddr" placeholder="0x..." />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="otherTokenName" class="trn">name</label>
-                                                                <input type="text" class="form-control" id="otherTokenName" placeholder="XYZ" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="otherTokenDecimals" class="trn">decimals</label>
-                                                                <input type="text" class="form-control" id="otherTokenDecimals" value="18" />
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default trn" data-dismiss="modal">cancel</button>
-                                                        <button type="button" class="btn btn-primary trn" id="otherTokenSubmit">go</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>                                         
-                                        <!-- Other base -->                                         
-                                        <div class="modal fade" id="otherBaseModal" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog modal-sm" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <h4 class="modal-title trn">other_base</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                            <div class="form-group">
-                                                                <label for="otherBaseAddr" class="trn">address</label>
-                                                                <input type="text" class="form-control" id="otherBaseAddr" placeholder="0x..." />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="otherBaseName" class="trn">name</label>
-                                                                <input type="text" class="form-control" id="otherBaseName" placeholder="XYZ" />
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label for="otherBaseDecimals" class="trn">decimals</label>
-                                                                <input type="text" class="form-control" id="otherBaseDecimals" value="18" />
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default trn" data-dismiss="modal">cancel</button>
-                                                        <button type="button" class="btn btn-primary trn" id="otherBaseSubmit">go</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>                                         
-                                        <!-- Token -->                                         
-                                        <div class="modal fade" id="tokenModal" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <h4 class="modal-title"> <div id="tokenGuideTitle"></div> </h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div id="tokenGuideDetails"></div>
-                                                        <div id="tokenGuideBody"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>                                         
-                                        <!-- Help -->                                         
-                                        <div class="modal fade" id="helpModal" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div id="helpBody"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>                                         
-                                        <!-- Screencast -->                                         
-                                        <div class="modal fade" id="screencastModal" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog large" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-body">
-                                                        <div id="screencastBody"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                                <div class="container"> 
+                <!-- Address -->                 
+                <div class="modal fade" id="accountModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title trn">import_account</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="accountAddr" class="trn">address</label>
+                                        <input type="text" class="form-control" id="accountAddr" placeholder="0x..." />
+                                    </div>
+                                    <div id="pkDiv">
+                                        <div class="form-group">
+                                            <label for="accountPk" class="trn">private_key</label>
+                                            <input type="text" class="form-control" id="accountPk" placeholder="0x..." />
                                         </div>
-                                        <p>.</p> 
-                                        <hr> 
-                                        <div class="row text-center" style="background-color: #4ccd14;">© 2018 coinEstate .   An Ethereum token community marketplace exchange for everyone.     
-                                            <p>&nbsp;<a href="https://marketplace.somidax.net//" target="_blank">MARKETPLACE</a> | <a href="https://tradewallet.somidax.net/" target="_blank">TRADEWALLET</a> | <a href="https://media-app.somidax.net/" target="_blank">MEDIA-APP</a> | <a href="https://www.somidax.net//" target="_blank">SOMIDAX FOUNDATION</a></p>
-                                            <img alt="coinEstate" src="https://img.shields.io/badge/coinEstate%20Approved%20url%3A-https%3A%2F%2Fcoinestate.somidax.net%2F-green.svg" bookmark it once and use the bookmark. < p>
-                                            <img alt="Join us on Reddit" src="https://img.shields.io/badge/reddit-somidax-red.svg">
-                                            <img alt="Chat on somidax Media-App" src="https://img.shields.io/badge/chat%20on-somidax%20Media--App-brightgreen.svg">
-                                        </div>                                         
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default trn" data-dismiss="modal">cancel</button>
+                                <button type="button" class="btn btn-primary trn" id="accountSubmit">import_account</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+                <!-- Buy -->                 
+                <div class="modal fade" id="buyCrossModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title trn">buy</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="buyCrossDesc" class="trn">order</label>
+                                        <div id="buyCrossDesc"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="buyCrossAmount">
+                                            <span class="trn">amount_to_buy</span> (
+                                            <span class="buyCrossToken"></span>)
+                                        </label>
+                                        <input type="text" class="form-control trn" id="buyCrossAmount" placeholder="amount" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="buyCrossBaseAmount">
+                                            <span class="buyCrossBase"></span>
+                                        </label>
+                                        <input type="text" class="form-control trn" id="buyCrossBaseAmount" placeholder="amount" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="buyCrossFee">
+                                            <span class="trn">fee</span> (
+                                            <span class="buyCrossBase"></span>)
+                                        </label>
+                                        <input type="text" class="form-control trn" id="buyCrossFee" disabled="disabled" />
+                                    </div>
+                                </form>
+                            </div>
+                            <input type="hidden" id="buyCrossOrder" />
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary trn" id="buyCrossSubmit">buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+                <!-- Sell -->                 
+                <div class="modal fade" id="sellCrossModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title trn">sell</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="sellCrossDesc" class="trn">order</label>
+                                        <div id="sellCrossDesc"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sellCrossAmount">
+                                            <span class="trn">amount_to_sell</span> (
+                                            <span class="sellCrossToken"></span>)
+                                        </label>
+                                        <input type="text" class="form-control trn" id="sellCrossAmount" placeholder="amount" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sellCrossBaseAmount">
+                                            <span class="sellCrossBase"></span>
+                                        </label>
+                                        <input type="text" class="form-control trn" id="sellCrossBaseAmount" placeholder="amount" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="sellCrossFee">
+                                            <span class="trn">fee</span> (
+                                            <span class="sellCrossToken"></span>)
+                                        </label>
+                                        <input type="text" class="form-control trn" id="sellCrossFee" disabled="disabled" />
+                                    </div>
+                                </form>
+                            </div>
+                            <input type="hidden" id="sellCrossOrder" />
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary trn" id="sellCrossSubmit">sell</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+                <!-- Other token -->                 
+                <div class="modal fade" id="otherTokenModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title trn">other_token</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="otherTokenAddr" class="trn">address</label>
+                                        <input type="text" class="form-control" id="otherTokenAddr" placeholder="0x..." />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="otherTokenName" class="trn">name</label>
+                                        <input type="text" class="form-control" id="otherTokenName" placeholder="XYZ" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="otherTokenDecimals" class="trn">decimals</label>
+                                        <input type="text" class="form-control" id="otherTokenDecimals" value="18" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default trn" data-dismiss="modal">cancel</button>
+                                <button type="button" class="btn btn-primary trn" id="otherTokenSubmit">go</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+                <!-- Other base -->                 
+                <div class="modal fade" id="otherBaseModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title trn">other_base</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="otherBaseAddr" class="trn">address</label>
+                                        <input type="text" class="form-control" id="otherBaseAddr" placeholder="0x..." />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="otherBaseName" class="trn">name</label>
+                                        <input type="text" class="form-control" id="otherBaseName" placeholder="XYZ" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="otherBaseDecimals" class="trn">decimals</label>
+                                        <input type="text" class="form-control" id="otherBaseDecimals" value="18" />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default trn" data-dismiss="modal">cancel</button>
+                                <button type="button" class="btn btn-primary trn" id="otherBaseSubmit">go</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+                <!-- Token -->                 
+                <div class="modal fade" id="tokenModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title"> <div id="tokenGuideTitle"></div> </h4>
+                            </div>
+                            <div class="modal-body">
+                                <div id="tokenGuideDetails"></div>
+                                <div id="tokenGuideBody"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+                <!-- Help -->                 
+                <div class="modal fade" id="helpModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="helpBody"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+                <!-- Screencast -->                 
+                <div class="modal fade" id="screencastModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog large" role="document">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div id="screencastBody"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                 
+                <img alt="coinEstate" src="https://img.shields.io/badge/coinEstate%20Approved%20url%3A-https%3A%2F%2Fcoinestate.somidax.net%2F-green.svg" bookmark it once and use the bookmark. < p> 
+                <div class="row text-center" style="background-color: #4ccd14;">© 2018 coinEstate .   An Ethereum token community marketplace exchange for everyone.     
+                    <p>&nbsp;<a href="https://marketplace.somidax.net//" target="_blank">MARKETPLACE</a> | <a href="https://tradewallet.somidax.net/" target="_blank">TRADEWALLET</a> | <a href="https://media-app.somidax.net/" target="_blank">MEDIA-APP</a> | <a href="https://www.somidax.net//" target="_blank">SOMIDAX FOUNDATION</a></p>
+                    <img alt="Join us on Reddit" src="https://img.shields.io/badge/reddit-somidax-red.svg">
+                    <img alt="Chat on somidax Media-App" src="https://img.shields.io/badge/chat%20on-somidax%20Media--App-brightgreen.svg">
+                </div>                 
+            </div>                                        
                                     </div>
                                 </footer> <script>
          function myFunction() {
