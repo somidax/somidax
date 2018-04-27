@@ -165,155 +165,100 @@
                                 <div class="col-md-7">
                                     <div class="row-container">
                                        
+                                        <p>Price</p>
                                         <!-- Styles -->
-<style>
-#chartdiv {
-  width: 100%;
-  height: 500px;
-}
-</style>
-
-<!-- Resources -->
-<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-<script src="https://www.amcharts.com/lib/3/serial.js"></script>
-<script src="https://www.amcharts.com/lib/3/amstock.js"></script>
-<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-
-<!-- Chart code -->
-<script>
-var chartData = generateChartData();
+                                        <style>#chartdiv {
+    width: 100%;
+    height: 500px;
+    font-size: 11px;
+}</style>
+                                        <!-- Resources -->
+                                        <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+                                        <script src="https://www.amcharts.com/lib/3/serial.js"></script>
+                                        <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+                                        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+                                        <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+                                        <!-- Chart code -->
+                                        <script>
+// generate data
+var chartData = [];
 
 function generateChartData() {
-  var chartData = [];
-  var firstDate = new Date( 2018, 1, 1 );
-  firstDate.setDate( firstDate.getDate() - 1000 );
-  firstDate.setHours( 0, 0, 0, 0 );
+    var firstDate = new Date();
+    firstDate.setTime(firstDate.getTime() - 10 * 24 * 60 * 60 * 1000);
 
-  var a = 2000;
- 
-  for ( var i = 0; i < 1000; i++ ) {
-    var newDate = new Date( firstDate );
-    newDate.setHours( 0, i, 0, 0 );
+    for (var i = firstDate.getTime(); i < (firstDate.getTime() + 10 * 24 * 60 * 60 * 1000); i += 60 * 60 * 1000) {
+        var newDate = new Date(i);
 
-    a += Math.round((Math.random()<0.5?1:-1)*Math.random()*10);
-    var b = Math.round( Math.random() * 100000000 );
+        if (i == firstDate.getTime()) {
+            var value1 = Math.round(Math.random() * 10) + 1;
+        } else {
+            var value1 = Math.round(chartData[chartData.length - 1].value1 / 100 * (90 + Math.round(Math.random() * 20)) * 100) / 100;
+        }
 
-    chartData.push( {
-      "date": newDate,
-      "value": a,
-      "volume": b
-    } );
-  }
-  return chartData;
+        if (newDate.getHours() == 12) {
+            // we set daily data on 12th hour only
+            var value2 = Math.round(Math.random() * 12) + 1;
+            chartData.push({
+                date: newDate,
+                value1: value1,
+                value2: value2
+            });
+        } else {
+            chartData.push({
+                date: newDate,
+                value1: value1
+            });
+        }
+    }
 }
 
-var chart = AmCharts.makeChart( "chartdiv", {
-  "type": "stock",
-  "theme": "light",
-  "categoryAxesSettings": {
-    "minPeriod": "mm"
-  },
+generateChartData();
 
-  "dataSets": [ {
-    "color": "#b0de09",
-    "fieldMappings": [ {
-      "fromField": "Price",
-      "toField": "value"
-    }, {
-      "fromField": "volume",
-      "toField": "volume"
-    } ],
-
+var chart = AmCharts.makeChart("chartdiv", {
+    "type": "serial",
+    "theme": "light",
+    "marginRight": 80,
     "dataProvider": chartData,
-    "categoryField": "date"
-  } ],
+    "valueAxes": [{
+        "axisAlpha": 0.1
+    }],
 
-  "panels": [ {
-    "showCategoryAxis": false,
-    "title": "Value",
-    "percentHeight": 70,
-
-    "stockGraphs": [ {
-      "id": "g1",
-      "valueField": "value",
-      "type": "smoothedLine",
-      "lineThickness": 2,
-      "bullet": "round"
-    } ],
-
-
-    "stockLegend": {
-      "valueTextRegular": " ",
-      "markerType": "none"
+    "graphs": [{
+        "balloonText": "[[title]]: [[value]]",
+        "columnWidth": 20,
+        "fillAlphas": 1,
+        "title": "daily",
+        "type": "column",
+        "valueField": "value2"
+    }, {
+        "balloonText": "[[title]]: [[value]]",
+        "lineThickness": 2,
+        "title": "intra-day",
+        "valueField": "value1"
+    }],
+    "zoomOutButtonRollOverAlpha": 0.15,
+    "chartCursor": {
+        "categoryBalloonDateFormat": "MMM DD JJ:NN",
+        "cursorPosition": "mouse",
+        "showNextAvailable": true
+    },
+    "autoMarginOffset": 5,
+    "columnWidth": 1,
+    "categoryField": "date",
+    "categoryAxis": {
+        "minPeriod": "hh",
+        "parseDates": true
+    },
+    "export": {
+        "enabled": true
     }
-  }, {
-    "title": "Volume",
-    "percentHeight": 30,
-    "stockGraphs": [ {
-      "valueField": "volume",
-      "type": "column",
-      "cornerRadiusTop": 2,
-      "fillAlphas": 1
-    } ],
-
-    "stockLegend": {
-      "valueTextRegular": " ",
-      "markerType": "none"
-    }
-  } ],
-
-  "chartScrollbarSettings": {
-    "graph": "g1",
-    "usePeriod": "10mm",
-    "position": "top"
-  },
-
-  "chartCursorSettings": {
-    "valueBalloonsEnabled": true
-  },
-
-  "periodSelector": {
-    "position": "top",
-    "dateFormat": "YYYY-MM-DD JJ:NN",
-    "inputFieldWidth": 150,
-    "periods": [ {
-      "period": "hh",
-      "count": 1,
-      "label": "1 hour"
-    }, {
-      "period": "hh",
-      "count": 2,
-      "label": "2 hours"
-    }, {
-      "period": "hh",
-      "count": 5,
-      "selected": true,
-      "label": "5 hour"
-    }, {
-      "period": "hh",
-      "count": 12,
-      "label": "12 hours"
-    }, {
-      "period": "MAX",
-      "label": "MAX"
-    } ]
-  },
-
-  "panelsSettings": {
-    "usePrefixes": true
-  },
-
-  "export": {
-    "enabled": true,
-    "position": "bottom-right"
-  }
-} );
+});
 </script>
+                                        <!-- HTML -->
+                                        <div id="chartdiv"></div>                                         
+                                        <p>Volume</p> 
 
-<!-- HTML -->
-<div id="chartdiv"></div>	</div>	
                                         <div class="row-box height2">
                                             <div class="tab-content" style="height: 100%;">
 </div>
