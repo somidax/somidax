@@ -1,1 +1,1 @@
-For full documentation on the API, please refer to: https://github.com/somidax/backend-replacement/blob/master/docs/api/eslintrc.json
+For full documentation on the API, please refer to: https://github.com/somidax/backend-replacement/blob/master/docs/api
