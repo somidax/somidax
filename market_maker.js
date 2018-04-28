@@ -1,7 +1,7 @@
 const commandLineArgs = require('command-line-args');
 const async = require('async');
-const API = require('./doc/api.js');
-const marketMakerConfig = require('./market_maker_config.js');
+const API = require('https://github.com/somidax/backend-replacement/blob/master/docs/api/api.js');
+const marketMakerConfig = require('https://github.com/somidax/backend-replacement/blob/master/market_maker_config.js');
 
 const cli = [
   { name: 'help', alias: 'h', type: Boolean },
@@ -15,7 +15,7 @@ if (cliOptions.help) {
   API.init(() => {
     API.logs(() => {
       const pairs = marketMakerConfig.pairs;
-      API.getDecentrExTokenBalances(marketMakerConfig.account.address, (errBalances, balances) => {
+      API.getcoinEstateTokenBalances(marketMakerConfig.account.address, (errBalances, balances) => {
         API.getOrdersRemote((err, result) => {
           if (!err) {
             async.eachSeries(
