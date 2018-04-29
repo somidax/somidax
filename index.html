@@ -1,396 +1,273 @@
 <!DOCTYPE html>
-<html lang="en" wp-site wp-site-is-master-page>
+<html lang="en" ng-app="todoApp">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="coinEstate |  An Ethereum token community marketplace exchange for everyone">
-        <meta name="keywords" content="Decentralized cryptocurrency exchange, Ethereum, ETH, coinEstate, SOMIDAX">
-        <meta property="og:title" content="coinEstate |  An Ethereum token community marketplace exchange for everyone" />
-        <meta property="og:description" content="coinEstate - Decentralized cryptocurrency exchange for ETH, SMDX and other tokens" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://coinestate.somidax.net/" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="/images/favicon.ico" rel="icon" />
-        <link href="/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/css/font-awesome.min.css" rel="stylesheet" />
-        <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet" />
-        <link href="/css/alertify.min.css" rel="stylesheet" />
-        <link href="/css/alertify-bootstrap.min.css" rel="stylesheet" />
-        <link href="/css/coinEstate_id.css" rel="stylesheet" />
-        <link href="/css/coinEstate-style.css" rel="stylesheet" />
-        <link href="/css/small.css" rel="stylesheet" media="only screen and (max-device-width: 580px)" />
+        <meta name="author" content="coinEstate ">
+        <link rel="shortcut icon" href="/images/favicon.png">
         <title>coinEstate |  An Ethereum token community marketplace exchange for everyone</title>
+        <script src="angular.js"></script>
+        <script src="todo.js"></script>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="todo.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
     </head>
     <body>
-        <p>.</p> 
-        <p>.</p>
-        <h1><h1>WELCOME TO coinEstate</h1>Decentralized Token Marketplace</h1>
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <script>
-         function myFunction() {
-           var input, filter, table, tr, td, i;
-           input = document.getElementById("myInput");
-           filter = input.value.toUpperCase();
-           table = document.getElementById("volume");
-           tr = table.getElementsByTagName("tr");
-           for (i = 0; i < tr.length; i++) {
-             td = tr[i].getElementsByTagName("td")[0];
-             if (td) {
-               if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                 tr[i].style.display = "";
-               } else {
-                 tr[i].style.display = "true";
-               }
-             }
-           }
-         }
-      </script>
-                    <script src="//www.gstatic.com/charts/loader.js" type="text/javascript"></script>
-                    <script>google.charts.load('current', {packages: ['corechart', 'line']});</script>
-                    <script src="/js/jquery-1.11.1.min.js" type="text/javascript"></script>
-                    <script src="/js/jquery.translate.js" type="text/javascript"></script>
-                    <script src="/js/bootstrap.min.js" type="text/javascript"></script>
-                    <script src="/js/alertify.min.js" type="text/javascript"></script>
-                    <script src="/js/ejs_production.js" type="text/javascript"></script>
-                    <script src="/js/bundle.js" type="text/javascript"></script>
-                    <script src="/scripts/script.js" type="text/javascript"></script>
-                    <script>
-         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-         ga('create', 'UA-99624091-1', 'auto');
-         ga('send', 'pageview');
-      </script>
-                    <head>
-                        <meta charset="utf-8">
-                        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                        <meta name="viewport" content="width=device-width, initial-scale=1">
-                        <meta name="description" content="">
-                        <meta name="author" content="">
-                        <title>coinEstate |  An Ethereum token community marketplace exchange for everyone</title>
-                        <!-- Bootstrap core CSS -->
-                        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-                        <!-- Custom styles for this template -->
-                        <link href="starter-template.css" rel="stylesheet">
-                        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-                        <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-                    </head>
-                    <body>
-                        <nav class="navbar navbar-inverse navbar-fixed-top">
-                            <div class="container">
-                                <!-- Brand and toggle get grouped for better mobile display -->
-                                <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>
-                                <div id="navbar" class="collapse navbar-collapse">
-                                    <ul class="nav navbar-nav">
-                                        <li class="active">
-                                            <a href="/images/logo.png" rel="icon">coinEstate</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://coinestate.somidax.net/">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="./about/index.html"><i class="fa fa-info-circle"></i> About coinEstate</a>
-                                        </li>
-                                        <li>
-                                            <a href="mailto:coinestate@somidax.net?subject=Assistance Needed"><i class="fa fa-info-circle"></i> Contact</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://marketplace.somidax.net/collections"><i class="fa fa-file-text"></i> shop onLine</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://github.com/somidax/baseHub/issues/new"><i class="fa fa-file-text"></i> Token Listing</a>
-                                        </li>
-                                        <li>
-                                            <a href="https://tradewallet.somidax.net"><i class="fa fa-info-circle"></i> Trade BTC</a>
-                                        </li>
-                                        <li>
-                        </nav>
-                        <div class="container">
-</div>
-                        <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container -->
-                <!-- Bootstrap core JavaScript
+        <!-- Bootstrap core JavaScript
     ================================================== -->
-                <!-- Placed at the end of the document so the pages load faster -->
-                <script src="assets/js/jquery.min.js"></script>
-                <script src="bootstrap/js/bootstrap.min.js"></script>
-                <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-                <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-                <meta charset="utf-8">
-                <meta name="description" content="coinEstate -  An Ethereum token community marketplace exchange for everyone">
-                <meta name="keywords" content="Decentralized cryptocurrency exchange, Ethereum, ETH, SMDX">
-                <meta property="og:title" content="coinEstate |  An Ethereum token community marketplace exchange for everyone">
-                <meta property="og:description" content="coinEstate |  An Ethereum token community marketplace exchange for everyone">
-                <meta property="og:type" content="website">
-                <meta property="og:url" content="https://coinestate.somidax.net/">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link href="/images/favicon.ico" rel="icon">
-                <link href="/css/bootstrap.min.css" rel="stylesheet">
-                <link href="/css/font-awesome.min.css" rel="stylesheet">
-                <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-                <link href="/css/alertify.min.css" rel="stylesheet">
-                <link href="/css/alertify-bootstrap.min.css" rel="stylesheet">
-                <link href="/css/coinEstatestyle.css" rel="stylesheet">
-                <link href="/css/small.css" rel="stylesheet" media="only screen and (max-device-width: 480px)">
-                <title>coinEstate |  An Ethereum token community marketplace exchange for everyone</title>                 
-                <div class="container-fluid">
-                    <div class="row" style="grid-row-gap: 30;">
-                        <center>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <!DOCTYPE html>
+        <html lang="en" wp-site wp-site-is-master-page>
+            <head>
+                <meta charset="utf-8" />
+                <meta name="description" content="coinEstate |  An Ethereum token community marketplace exchange for everyone">
+                <meta name="keywords" content="Decentralized cryptocurrency exchange, Ethereum, ETH, coinEstate, SOMIDAX">
+                <meta property="og:title" content="coinEstate |  An Ethereum token community marketplace exchange for everyone" />
+                <meta property="og:description" content="coinEstate - Decentralized cryptocurrency exchange for ETH, SMDX and other tokens" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://coinestate.somidax.net/" />
+                <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link href="/images/favicon.ico" rel="icon" />
+                <link href="/css/bootstrap.min.css" rel="stylesheet" />
+                <link href="/css/font-awesome.min.css" rel="stylesheet" />
+                <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet" />
+                <link href="/css/alertify.min.css" rel="stylesheet" />
+                <link href="/css/alertify-bootstrap.min.css" rel="stylesheet" />
+                <link href="/css/coinEstate_id.css" rel="stylesheet" />
+                <link href="/css/coinEstate-style.css" rel="stylesheet" />
+                <link href="/css/small.css" rel="stylesheet" media="only screen and (max-device-width: 580px)" />
+                <title>coinEstate |  An Ethereum token community marketplace exchange for everyone</title>
+            </head>
+            <p>.</p>
+            <p>.</p>
+            <body>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only" id="toggleNavigation" class="trn">toggle_navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="/"> <i class="fa fa-database" aria-hidden="true"></i> Marketplace </a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown" id="tokensDropdown"></li>
+                                <li class="dropdown" id="basesDropdown"></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown" id="tokenGuidesDropdown"></li>
+                                <li class="dropdown" id="helpDropdown"></li>
+                                <li class="dropdown" id="connection"></li>
+                                <li class="dropdown" id="languages"></li>
+                                <li class="dropdown" id="addresses"></li>
+                            </ul>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown" id="tokensDropdown"></li>
+                                <li class="dropdown" id="basesDropdown"></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="dropdown" id="tokenGuidesDropdown"></li>
+                                <li class="dropdown" id="helpDropdown"></li>
+                                <li class="dropdown" id="connection"></li>
+                                <li class="dropdown" id="languages"></li>
+                                <li class="dropdown" id="addresses"></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+            </head>
+            <body>
+                <nav class="navbar navbar-inverse navbar-fixed-top">
+                    <div class="container">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <li>
+                                <a href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/black.css')"><i class="fa fa-square" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" onclick="document.getElementById('stylesheet').setAttribute('href', '/css/white.css')"><i class="fa fa-square-o" aria-hidden="true"></i></a>
+                            </li>
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div id="navbar" class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav">
+                                <li class="active">
+                                    <a class="navbar-brand" href="/">
+                                        <img src="/images/title.png" alt="." />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://coinestate.somidax.net/">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./about/index.html"><i class="fa fa-info-circle"></i> About coinEstate</a>
+                                </li>
+                                <li>
+                                    <a href="mailto:coinestate@somidax.net?subject=Assistance Needed"><i class="fa fa-info-circle"></i> Contact</a>
+                                </li>
+                                <li>
+                                    <a href="https://marketplace.somidax.net/collections"><i class="fa fa-file-text"></i> shop onLine</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/somidax/baseHub/issues/new"><i class="fa fa-file-text"></i> Token Listing</a>
+                                </li>
+                                <li>
+                                    <a href="https://tradewallet.somidax.net"><i class="fa fa-info-circle"></i> Trade BTC</a>
+                                </li>
+                                <li>
+                </nav>
+                <div class="container">
+</div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <center>
 </center>
-                    </div>                     
-                    <section class="features-list" style="text-transform: lowercase;">
-                        <div class="row">
-</div>
-                        <p></p>
-                        <p></p>
-                        <b> </b>
-                        <p>.</p>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <div class="row-container">
-                                       
-                                        <p>Price</p>
-                                        <!-- Styles -->
-                                        <style>#chartdiv {
-    width: 100%;
-    height: 500px;
-    font-size: 11px;
-}</style>
-                                        <!-- Resources -->
-                                        <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-                                        <script src="https://www.amcharts.com/lib/3/serial.js"></script>
-                                        <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-                                        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-                                        <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-                                        <!-- Chart code -->
-                                        <script>
-// generate data
-var chartData = [];
-
-function generateChartData() {
-    var firstDate = new Date();
-    firstDate.setTime(firstDate.getTime() - 10 * 24 * 60 * 60 * 1000);
-
-    for (var i = firstDate.getTime(); i < (firstDate.getTime() + 10 * 24 * 60 * 60 * 1000); i += 60 * 60 * 1000) {
-        var newDate = new Date(i);
-
-        if (i == firstDate.getTime()) {
-            var value1 = Math.round(Math.random() * 10) + 1;
-        } else {
-            var value1 = Math.round(chartData[chartData.length - 1].value1 / 100 * (90 + Math.round(Math.random() * 20)) * 100) / 100;
-        }
-
-        if (newDate.getHours() == 12) {
-            // we set daily data on 12th hour only
-            var value2 = Math.round(Math.random() * 12) + 1;
-            chartData.push({
-                date: newDate,
-                value1: value1,
-                value2: value2
-            });
-        } else {
-            chartData.push({
-                date: newDate,
-                value1: value1
-            });
-        }
-    }
-}
-
-generateChartData();
-
-var chart = AmCharts.makeChart("chartdiv", {
-    "type": "serial",
-    "theme": "light",
-    "marginRight": 80,
-    "dataProvider": chartData,
-    "valueAxes": [{
-        "axisAlpha": 0.1
-    }],
-
-    "graphs": [{
-        "balloonText": "[[title]]: [[value]]",
-        "columnWidth": 20,
-        "fillAlphas": 1,
-        "title": "daily",
-        "type": "column",
-        "valueField": "value2"
-    }, {
-        "balloonText": "[[title]]: [[value]]",
-        "lineThickness": 2,
-        "title": "intra-day",
-        "valueField": "value1"
-    }],
-    "zoomOutButtonRollOverAlpha": 0.15,
-    "chartCursor": {
-        "categoryBalloonDateFormat": "MMM DD JJ:NN",
-        "cursorPosition": "mouse",
-        "showNextAvailable": true
-    },
-    "autoMarginOffset": 5,
-    "columnWidth": 1,
-    "categoryField": "date",
-    "categoryAxis": {
-        "minPeriod": "hh",
-        "parseDates": true
-    },
-    "export": {
-        "enabled": true
-    }
-});
-</script>
-                                        <!-- HTML -->
-                                        <div id="chartdiv"></div>                                         
-                                        <p>Volume</p> 
-
-                                        <div class="row-box height2">
-                                            <div class="tab-content" style="height: 100%;">
-</div>
-                                        </div>
-                                        <div class="row-header trn">new_order</div>
-                                        <div class="row-box nav-header">
-                                            <ul class="nav nav-tabs two columns" role="tablist">
-                                                <li role="presentation" class="active">
-                                                    <a href="#buy" aria-controls="buy" role="tab" data-toggle="tab" class="trn">buy</a>
-                                                </li>
-                                                <li role="presentation">
-                                                    <a href="#sell" aria-controls="sell" role="tab" data-toggle="tab" class="trn">sell</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="row-box padding">
-                                            <input type="hidden" id="tokenAddr" value="<%= selectedToken.addr %>" />
-                                            <input type="hidden" id="baseAddr" value="<%= selectedBase.addr %>" />
-                                            <div class="tab-content">
-                                                <div role="tabpanel" class="tab-pane active" id="buy"></div>
-                                                <div role="tabpanel" class="tab-pane" id="sell"></div>
-                                            </div>
-                                        </div>
-                                        <div class="row-header trn">order_book</div>
-                                        <div id="orderBook"></div>
-                                        <div class="row-header">
-                                            <span class="trn">trades</span>
-                                        </div>
-                                        <div id="trades"></div>
+                    <section class="features-list">
+</section>
+                    <div class="col-md-7">
+                        <div class="row-container">
+                            <div class="row-header trn">price_chart</div>
+                            <div class="row-box nav-header">
+                                <ul class="nav nav-tabs two columns" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#chartPrice" aria-controls="chartPrice" role="tab" data-toggle="tab" class="trn">price</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#chartDepth" aria-controls="chartDepth" role="tab" data-toggle="tab" class="trn">depth</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row-box height2">
+                                <div class="tab-content" style="height: 100%;">
+                                    <div role="tabpanel" class="tab-pane active" id="chartPrice" style="height: 100%; width: 100%; background: #00796b;"></div>
+                                    <div role="tabpanel" class="tab-pane" id="chartDepth" style="height: 100%; width: 100%; background: #00796b;"></div>
+                                </div>
+                            </div>
+                            <div class="row-header trn">new_order</div>
+                            <div class="row-box nav-header">
+                                <ul class="nav nav-tabs two columns" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#buy" aria-controls="buy" role="tab" data-toggle="tab" class="trn">buy</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#sell" aria-controls="sell" role="tab" data-toggle="tab" class="trn">sell</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row-box padding">
+                                <input type="hidden" id="tokenAddr" value="<%= selectedToken.addr %>" />
+                                <input type="hidden" id="baseAddr" value="<%= selectedBase.addr %>" />
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="buy"></div>
+                                    <div role="tabpanel" class="tab-pane" id="sell"></div>
+                                </div>
+                            </div>
+                            <div class="row-header trn">order_book</div>
+                            <div id="orderBook"></div>
+                            <div class="row-header">
+                                <span class="trn">trades</span>
+                            </div>
+                            <div id="trades"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row-container">
+                            <div class="row-container">
+                                <div class="row-header trn">volume</div>
+                                <input id="myInput" onkeyup="myFunction()" placeholder="Ethereum tokens search ..." title="Type in a Token name" type="text">
+                                <div class="row-box table-header">
+                                    <table class="table table-condensed table-borderless">
+                                        <tr>
+                                            <th class="trn">pair</th>
+                                            <th class="align-right"><span class="trn">bid</span></th>
+                                            <th class="align-right padding-right"><span class="trn">offer</span></th>
+                                            <th class="trn align-right">daily</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="volume"></div>
+                                <div class="row-header trn">balance</div>
+                                <div class="row-box nav-header">
+                                    <ul class="nav nav-tabs three columns" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#deposit" aria-controls="deposit" role="tab" data-toggle="tab" class="trn">deposit</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#withdraw" aria-controls="withdraw" role="tab" data-toggle="tab" class="trn">withdraw</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#transfer" aria-controls="transfer" role="tab" data-toggle="tab" class="trn">transfer</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row-box table-header">
+                                    <table class="table table-condensed table-borderless">
+                                        <tr>
+                                            <th class="trn">token</th>
+                                            <th class="trn">balance_in_your_wallet</th>
+                                            <th class="trn">balance_coinEstate</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="row-box height4">
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="deposit"></div>
+                                        <div role="tabpanel" class="tab-pane" id="withdraw"></div>
+                                        <div role="tabpanel" class="tab-pane" id="transfer"></div>
                                     </div>
                                 </div>
-                                <div class="col-md-5">
-                                    <div class="row-container">
-                                        <div class="row-container">
-                                            <div class="row-header trn">volume</div>
-                                            <input id="myInput" onkeyup="myFunction()" placeholder="Ethereum tokens search ..." title="Type in a Token name" type="text">
-                                            <div class="row-box table-header">
-                                                <table class="table table-condensed table-borderless">
-                                                    <tr>
-                                                        <th class="trn">pair</th>
-                                                        <th class="align-right"><span class="trn">bid</span></th>
-                                                        <th class="trn align-right">daily</th>
-                                                        <th class="align-right padding-right"><span class="trn">offer</span></th>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <div id="volume"></div>
-                                            <div class="row-header trn">balance</div>
-                                            <div class="row-box nav-header">
-                                                <ul class="nav nav-tabs three columns" role="tablist">
-                                                    <li role="presentation" class="active">
-                                                        <a href="#deposit" aria-controls="deposit" role="tab" data-toggle="tab" class="trn">deposit</a>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <a href="#withdraw" aria-controls="withdraw" role="tab" data-toggle="tab" class="trn">withdraw</a>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <a href="#transfer" aria-controls="transfer" role="tab" data-toggle="tab" class="trn">transfer</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="row-box table-header">
-                                                <table class="table table-condensed table-borderless">
-                                                    <tr>
-                                                        <th class="trn">token</th>
-                                                        <th class="trn">wallet_balance</th>
-                                                        <th class="trn">coinEstate_balance</th>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <div class="row-box height4">
-                                                <div class="tab-content">
-                                                    <div role="tabpanel" class="tab-pane active" id="deposit"></div>
-                                                    <div role="tabpanel" class="tab-pane" id="withdraw"></div>
-                                                    <div role="tabpanel" class="tab-pane" id="transfer"></div>
-                                                </div>
-                                            </div>
-                                            <div class="row-header trn">my_transactions</div>
-                                            <div class="row-box nav-header">
-                                                <ul class="nav nav-tabs two columns" role="tablist">
-                                                    <li role="presentation" class="active">
-                                                        <a href="#myTrades" aria-controls="myTrades" role="tab" data-toggle="tab" class="trn">trades</a>
-                                                    </li>
-                                                    <li role="presentation">
-                                                        <a href="#myOrders" aria-controls="myOrders" role="tab" data-toggle="tab" class="trn">orders</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="row-box">
-                                                <div class="tab-content">
-                                                    <div role="tabpanel" class="tab-pane active" id="myTrades"></div>
-                                                    <div role="tabpanel" class="tab-pane" id="myOrders"></div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="row-header trn">my_transactions</div>
+                                <div class="row-box nav-header">
+                                    <ul class="nav nav-tabs two columns" role="tablist">
+                                        <li role="presentation" class="active">
+                                            <a href="#myTrades" aria-controls="myTrades" role="tab" data-toggle="tab" class="trn">trades</a>
+                                        </li>
+                                        <li role="presentation">
+                                            <a href="#myOrders" aria-controls="myOrders" role="tab" data-toggle="tab" class="trn">orders</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="row-box">
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="myTrades"></div>
+                                        <div role="tabpanel" class="tab-pane" id="myOrders"></div>
                                     </div>
                                 </div>
                             </div>
-                            <p>.</p>
-                            <p><!-- Styles --><style>#chartdiv {
-    width: 97%;
-    height: 500px;
-}</style><!-- Resources --><script src="https://www.amcharts.com/lib/3/amcharts.js"></script><script src="https://www.amcharts.com/lib/3/serial.js"></script><script src="https://www.amcharts.com/lib/3/amstock.js"></script><script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script><link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" /><script src="https://www.amcharts.com/lib/3/themes/none.js"></script><!-- Chart code --><script>
-
-  }AmCharts.makeChart( "chartdiv", {
-  ...,
-  "dataLoader": {
-    "url": "data.json",
-    "format": "json"
-  }
-} );
-</script><!-- HTML --> <p>.</p><div class="col-md-4 col-sm-6">
-                                    <h4><i class="fa fa-money" aria-hidden="true"></i><br><blockquote>
-                                            <h4 spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="28" medium-editor-index="d633718b-8eb5-18ce-dead-663a6ffc3c3e" data-placeholder="Type your text" data-medium-focused="true"><b>Trade Ethereum and any $ETH token.. $SMDX</b></h4>
-                                        </blockquote></h4>
-                                    It is unlimited, you can trade any Ethereum based tokens here.
-                                </div><p style="background-image: url('logo.jpg');"></p><h1></h1><p></p><div class="col-md-4 col-sm-6">
-                                    <h4><i class="fa fa-globe" aria-hidden="true"></i><b> Ethereum exchange</b></h4>
-                                    coinEstate is powered by Ethereum smart contract AS you interact with this page.
-                                </div><div class="col-md-4 col-sm-6">
-                                    <h4><b><i class="fa fa-shield" aria-hidden="true"></i> Censorship protection and no registration</b></h4>
-                                    coinEstate has strong censorship protection due to its decentralized essence.
-                                </div><div class="col-md-4 col-sm-6">
-                                    <h4><i class="fa fa-search" aria-hidden="true"></i></h4>
-                                    <b> Transparent with blockchain</b>
-                                    Every single trade and transaction can be observed in 
-                                    <a href="https://etherscan.io/address/0x7e8539d1e5cb91d63e46b8e188403b3f262a949b" target="_blank">Ethereum blockchain</a>.
-                                </div><p class="text-justify bg-info show" data-toggle="popover">.<p>.</p></p><h4><i class="fa fa-heart-o" aria-hidden="true"></i><b> Smart contract powered</b></h4><p class="col-md-4 col-sm-6"><a target="_blank" href="https://etherscan.io/address/0x983293eb01740d9788bbdcfe3a29d1bf2fdfc47d"> <i class="fa fa-file-code-o" aria-hidden="true"> </i> coinEstate smart contract </a>is a heart of coinEstate, it is stored in blockchain.</p><p>.</p><!--   FOOTER START================== --> <footer class="footer"> 
-                                    <!--   FOOTER START================== -->         
-        <footer class="footer"> 
-            <div class="container"> 
-                <!-- Address -->                 
+                        </div>
+                    </div>
+                    <p>.</p>
+                </div>
+                <!-- Address -->
                 <div class="modal fade" id="accountModal" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-sm" role="document">
                         <div class="modal-content">
@@ -420,8 +297,8 @@ var chart = AmCharts.makeChart("chartdiv", {
                             </div>
                         </div>
                     </div>
-                </div>                 
-                <!-- Buy -->                 
+                </div>
+                <!-- Buy -->
                 <div class="modal fade" id="buyCrossModal" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-sm" role="document">
                         <div class="modal-content">
@@ -465,8 +342,8 @@ var chart = AmCharts.makeChart("chartdiv", {
                             </div>
                         </div>
                     </div>
-                </div>                 
-                <!-- Sell -->                 
+                </div>
+                <!-- Sell -->
                 <div class="modal fade" id="sellCrossModal" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-sm" role="document">
                         <div class="modal-content">
@@ -510,8 +387,8 @@ var chart = AmCharts.makeChart("chartdiv", {
                             </div>
                         </div>
                     </div>
-                </div>                 
-                <!-- Other token -->                 
+                </div>
+                <!-- Other token -->
                 <div class="modal fade" id="otherTokenModal" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-sm" role="document">
                         <div class="modal-content">
@@ -543,8 +420,8 @@ var chart = AmCharts.makeChart("chartdiv", {
                             </div>
                         </div>
                     </div>
-                </div>                 
-                <!-- Other base -->                 
+                </div>
+                <!-- Other base -->
                 <div class="modal fade" id="otherBaseModal" tabindex="-1" role="dialog">
                     <div class="modal-dialog modal-sm" role="document">
                         <div class="modal-content">
@@ -576,8 +453,8 @@ var chart = AmCharts.makeChart("chartdiv", {
                             </div>
                         </div>
                     </div>
-                </div>                 
-                <!-- Token -->                 
+                </div>
+                <!-- Token -->
                 <div class="modal fade" id="tokenModal" tabindex="-1" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -593,8 +470,8 @@ var chart = AmCharts.makeChart("chartdiv", {
                             </div>
                         </div>
                     </div>
-                </div>                 
-                <!-- Help -->                 
+                </div>
+                <!-- Help -->
                 <div class="modal fade" id="helpModal" tabindex="-1" role="dialog">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -603,8 +480,8 @@ var chart = AmCharts.makeChart("chartdiv", {
                             </div>
                         </div>
                     </div>
-                </div>                 
-                <!-- Screencast -->                 
+                </div>
+                <!-- Screencast -->
                 <div class="modal fade" id="screencastModal" tabindex="-1" role="dialog">
                     <div class="modal-dialog large" role="document">
                         <div class="modal-content">
@@ -613,16 +490,92 @@ var chart = AmCharts.makeChart("chartdiv", {
                             </div>
                         </div>
                     </div>
-                </div>                 
-                <img alt="coinEstate" src="https://img.shields.io/badge/coinEstate%20Approved%20url%3A-https%3A%2F%2Fcoinestate.somidax.net%2F-green.svg" bookmark it once and use the bookmark. < p> 
-                <div class="row text-center" style="background-color: #4ccd14;">© 2018 coinEstate .   An Ethereum token community marketplace exchange for everyone.     
-                    <p>&nbsp;<a href="https://marketplace.somidax.net//" target="_blank">MARKETPLACE</a> | <a href="https://tradewallet.somidax.net/" target="_blank">TRADEWALLET</a> | <a href="https://media-app.somidax.net/" target="_blank">MEDIA-APP</a> | <a href="https://www.somidax.net//" target="_blank">SOMIDAX FOUNDATION</a></p>
-                    <img alt="Join us on Reddit" src="https://img.shields.io/badge/reddit-somidax-red.svg">
-                    <img alt="Chat on somidax Media-App" src="https://img.shields.io/badge/chat%20on-somidax%20Media--App-brightgreen.svg">
-                </div>                 
+                </div>
+                <p>.</p>
+                <!--   FOOTER START================== -->
             </div>
-        </footer>         
-        <script>
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+</p>
+                    <div class="col-md-4 col-sm-6">
+                        <h4><i class="fa fa-money" aria-hidden="true"></i><br><blockquote>
+                                <h4 spellcheck="true" data-medium-editor-element="true" role="textbox" aria-multiline="true" data-medium-editor-editor-index="28" medium-editor-index="d633718b-8eb5-18ce-dead-663a6ffc3c3e" data-placeholder="Type your text" data-medium-focused="true"><b>Trade Ethereum and any $ETH token.. $SMDX</b></h4>
+                            </blockquote></h4>
+                        It is unlimited, you can trade any Ethereum based tokens here.
+                    </div>
+                    <p style="background-image: url('logo.jpg');"></p>
+                    <h1></h1>
+                    <p></p>
+                    <div class="col-md-4 col-sm-6">
+                        <h4><i class="fa fa-globe" aria-hidden="true"></i><b> Ethereum exchange</b></h4>
+                        coinEstate is powered by Ethereum smart contract AS you interact with this page.
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <h4><b><i class="fa fa-shield" aria-hidden="true"></i> Censorship protection and no registration</b></h4>
+                        coinEstate has strong censorship protection due to its decentralized essence.
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <h4><i class="fa fa-search" aria-hidden="true"></i></h4>
+                        <b> Transparent with blockchain</b>
+                        Every single trade and transaction can be observed in 
+                        <a href="https://etherscan.io/address/0x7e8539d1e5cb91d63e46b8e188403b3f262a949b" target="_blank">Ethereum blockchain</a>.
+                    </div>
+                    <p class="text-justify bg-info show" data-toggle="popover">.<p>.</p></p>
+                    <h4><i class="fa fa-heart-o" aria-hidden="true"></i><b> Smart contract powered</b></h4>
+                    <p class="col-md-4 col-sm-6"><a target="_blank" href="https://etherscan.io/address/0x983293eb01740d9788bbdcfe3a29d1bf2fdfc47d"> <i class="fa fa-file-code-o" aria-hidden="true"> </i> coinEstate smart contract </a>is a heart of coinEstate, it is stored in blockchain.<p>.</p></p>
+                    <hr>
+            </footer>
+            <script>
+         function myFunction() {
+           var input, filter, table, tr, td, i;
+           input = document.getElementById("myInput");
+           filter = input.value.toUpperCase();
+           table = document.getElementById("volume");
+           tr = table.getElementsByTagName("tr");
+           for (i = 0; i < tr.length; i++) {
+             td = tr[i].getElementsByTagName("td")[0];
+             if (td) {
+               if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                 tr[i].style.display = "";
+               } else {
+                 tr[i].style.display = "none";
+               }
+             }
+           }
+         }
+      </script>             
+        </p>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane" id="myTrades"></div>
+<div role="tabpanel" class="tab-pane" id="myOrders"></div>
+<div role="tabpanel" class="tab-pane" id="myFunds"></div>
+<script src="//www.gstatic.com/charts/loader.js" type="text/javascript"></script>
+<script>google.charts.load('current', {packages: ['corechart', 'line']});</script>
+<script src="/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="/js/jquery.translate.js" type="text/javascript"></script>
+<script src="/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/alertify.min.js" type="text/javascript"></script>
+<script src="/js/ejs_production.js" type="text/javascript"></script>
+<script src="/js/bundle.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+<script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-99624091-1', 'auto');
+         ga('send', 'pageview');
+     </div>                                                 
+                                                <img alt="coinEstate" src="https://img.shields.io/badge/coinEstate%20Approved%20url%3A-https%3A%2F%2Fcoinestate.somidax.net%2F-green.svg" bookmark it once and use the bookmark. < p> 
+                                                <div class="row text-center" style="background-color: #4ccd14;">© 2018 coinEstate .   An Ethereum token community marketplace exchange for everyone.     
+                                                    <p>&nbsp;<a href="https://marketplace.somidax.net//" target="_blank">MARKETPLACE</a> | <a href="https://tradewallet.somidax.net/" target="_blank">TRADEWALLET</a> | <a href="https://media-app.somidax.net/" target="_blank">MEDIA-APP</a> | <a href="https://www.somidax.net//" target="_blank">SOMIDAX FOUNDATION</a></p>
+                                                    <img alt="Join us on Reddit" src="https://img.shields.io/badge/reddit-somidax-red.svg">
+                                                    <img alt="Chat on somidax Media-App" src="https://img.shields.io/badge/chat%20on-somidax%20Media--App-brightgreen.svg">
+                                                </div>                                                 
+                                            </div>
+                                        </footer> <script>
          function myFunction() {
            var input, filter, table, tr, td, i;
            input = document.getElementById("myInput");
@@ -647,27 +600,26 @@ var chart = AmCharts.makeChart("chartdiv", {
     <div id="gasPrice"></div>
     <div id="tokenGuide"></div>
     <div id="screencast"></div>
-    <div id="ledger"></div>        
-      </script> <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <script type="text/javascript">
-                    google.charts.load('current', {packages: ['corechart']});
-                    google.charts.setOnLoadCallback(drawChart);
-                    ...
-                    </script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
-   </script>   <script src="/js/jquery.translate.js"></script> <script src="/js/bootstrap.min.js"></script> <script src="/js/alertify.min.js"></script> <script src="/js/ejs_production.js"></script> <script src="/js/bundle.js"></script> <script src="/scripts/script.js"></script> <script src="/js/jquery-3.3.1.min.js"></scri>
-                    <script src="/js/bootstrap.min.js"></script> <script src="/js/alertify.min.js"></script> <script src="/js/ejs_production.js"></script> <script src="/js/chrome-u2f-api.js"></script> <script src="/js/ledger.min.js"></script> <script src="/js/main.js"></script> <script src="amcharts/plugins/dataloader/dataloader.min.js" type="text/javascript"></script><script src="/about/public/datafeeds/udf/dist/polyfills.js"></script> <script src="/about/public/datafeeds/udf/dist/bundle.js"></script> <script charset="utf-8" src="/https://media-app.somidax.net/somidaxApp-cc/js.php"></script> <link type="text/css" rel="stylesheet" media="all" href="https://media-app.somidax.net/somidaxApp-cc/css.php"> <script>
-                     </div>                             
-                        
-            <script>
+    <div id="ledger"></div>
+      </script> 
+<script>
          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
          ga('create', 'UA-109254084-1', 'auto');
          ga('send', 'pageview');
-      </script> <script>
+      </script> 
+<script>
     $(function() {
     $('[data-toggle="popover"]').popover();
 })
-</script>
-    </body>
+</script> 
+<img alt="coinEstate" src="https://img.shields.io/badge/coinEstate%20Approved%20url%3A-https%3A%2F%2Fcoinestate.somidax.net%2F-green.svg" bookmark it once and use the bookmark. < p> 
+<div class="row text-center" style="background-color: #4ccd14;">© 2018 coinEstate .   An Ethereum token community marketplace exchange for everyone.     
+    <p>&nbsp;<a href="https://marketplace.somidax.net//" target="_blank">MARKETPLACE</a> | <a href="https://tradewallet.somidax.net/" target="_blank">TRADEWALLET</a> | <a href="https://media-app.somidax.net/" target="_blank">MEDIA-APP</a> | <a href="https://www.somidax.net//" target="_blank">SOMIDAX FOUNDATION</a></p>
+    <img alt="Join us on Reddit" src="https://img.shields.io/badge/reddit-somidax-red.svg">
+    <img alt="Chat on somidax Media-App" src="https://img.shields.io/badge/chat%20on-somidax%20Media--App-brightgreen.svg">
+</div>
+        </body>
 </html>
