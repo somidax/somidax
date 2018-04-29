@@ -239,7 +239,7 @@ coinEstate.prototype.createAccount = function createAccount() {
   const pk = newAccount.privateKey;
   this.addAccount(addr, pk);
   this.alertDialog(
-    `You just created an Ethereum account: <pre>${addr}</pre> Please BACKUP the private key for this account: <pre>${pk}</pre>`);
+    `You just created an Ethereum account: ${addr}<br /><br />Please BACKUP the private key for this account: ${pk}`);
   ga('send', {
     hitType: 'event',
     eventCategory: 'Action',
@@ -2434,6 +2434,6 @@ coinEstate.prototype.startcoinEstate = function startcoinEstate() {
   });
 };
 
-const coinEstate = new coinEstate();
+const conEstate = new coinEstate();
 
 module.exports = { coinEstate: coinEstate, utility };
