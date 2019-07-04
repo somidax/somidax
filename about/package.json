@@ -6,13 +6,14 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts-ts": "4.0.1",
-    "snyk": "^1.113.0"
+    "snyk": "^1.189.0"
   },
   "scripts": {
     "start": "react-scripts-ts start",
     "build": "react-scripts-ts build",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "devDependencies": {
     "@types/jquery": "^1.10.31",
